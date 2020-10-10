@@ -151,7 +151,9 @@ const PlayerBuilderForm = () => {
           </Button>
         </FormGroup>
       </Form>
-      <DevTool control={hookFormMethods.control} />
+      {process.env.NODE_ENV === "development" && (
+        <DevTool control={hookFormMethods.control} />
+      )}
     </FormProvider>
   );
 };

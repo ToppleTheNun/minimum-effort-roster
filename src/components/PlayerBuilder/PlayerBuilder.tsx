@@ -3,14 +3,14 @@ import React from "react";
 import Content from "../halfmoon/Content";
 import Container from "../halfmoon/Container";
 import PlayerBuilderForm from "./PlayerBuilderForm";
-import RosterListSidebar from "../RosterListSidebar";
+import PlayerBuilderRosterList from "./PlayerBuilderRosterList";
 
 const PlayerBuilder = () => {
   return (
     <Container breakpoint="fluid">
       <div className="row">
-        <div className="border-right col-lg-3">
-          <RosterListSidebar />
+        <div className="col-lg-3">
+          <PlayerBuilderRosterList />
         </div>
         <div className="col-lg-9">
           <Content>
