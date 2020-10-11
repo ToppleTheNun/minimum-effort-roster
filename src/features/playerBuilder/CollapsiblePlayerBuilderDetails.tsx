@@ -1,8 +1,8 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 
 import Button from "../../components/halfmoon/Button";
 import { Player } from "../../types/Player";
-import { useDispatch } from "react-redux";
 import { AppDispatch, useTypedSelector } from "../../app/store";
 import {
   closePlayerDetails,
@@ -33,18 +33,17 @@ const CollapsiblePlayerBuilderDetails = ({
     removePlayerById(player.id);
   };
 
-  const handleDetailsToggle: React.MouseEventHandler<HTMLElement> = () => {
+  const handleSummaryOnClick: React.ReactEventHandler<HTMLElement> = (e) => {
+    e.preventDefault();
     const actionToDispatch = isOpen ? closePlayerDetails : openPlayerDetails;
     dispatch(actionToDispatch([player.id]));
   };
 
   return (
-    <details
-      className="collapse-panel"
-      open={isOpen}
-      onToggle={handleDetailsToggle}
-    >
-      <summary className="collapse-header">{player.name}</summary>
+    <details className="collapse-panel" open={isOpen}>
+      <summary className="collapse-header" onClick={handleSummaryOnClick}>
+        {player.name}
+      </summary>
       <div className="collapse-content">
         <ul>
           {player.characterSpecializations.map((spec) => (

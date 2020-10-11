@@ -4,12 +4,10 @@ import { useDispatch } from "react-redux";
 import Container from "../../components/halfmoon/Container";
 import Content from "../../components/halfmoon/Content";
 import { AppDispatch, useTypedSelector } from "../../app/store";
-import {
-  closePlayerDetails,
-  openPlayerDetails,
-} from "./compositionSlice";
+import { closePlayerDetails, openPlayerDetails } from "./compositionSlice";
 import NoRosterAvailable from "./NoRosterAvailable";
 import CompositionSidebar from "./CompositionSidebar";
+import CompositionDisplay from "./CompositionDisplay";
 
 const CompositionPage = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -47,7 +45,7 @@ const CompositionPage = () => {
             <p>Build a composition here.</p>
           </Content>
           <Content>
-            Hi mom
+            <CompositionDisplay />
           </Content>
         </div>
       </div>

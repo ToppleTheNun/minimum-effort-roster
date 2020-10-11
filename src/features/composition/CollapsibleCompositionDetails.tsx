@@ -1,12 +1,16 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import classNamesBind from "classnames/bind";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 import { Player } from "../../types/Player";
-import { useDispatch } from "react-redux";
 import { AppDispatch, useTypedSelector } from "../../app/store";
-import { closePlayerDetails, openPlayerDetails } from "./compositionSlice";
+import {
+  closePlayerDetails,
+  openPlayerDetails,
+  addPlayerSpec,
+} from "./compositionSlice";
 import Button from "../../components/halfmoon/Button";
 import Switch from "../../components/halfmoon/Switch";
 
@@ -28,18 +32,25 @@ const CollapsibleCompositionDetails = ({
   );
   const isOpen = playerDetails?.open;
 
-  const handleDetailsToggle: React.MouseEventHandler<HTMLElement> = () => {
+  const handleOnSummaryClick: React.ReactEventHandler<HTMLElement> = (e) => {
+    e.preventDefault();
     const actionToDispatch = isOpen ? closePlayerDetails : openPlayerDetails;
     dispatch(actionToDispatch([player.id]));
   };
 
+  const handleOnPlusClick: (
+    specId: string
+  ) => React.MouseEventHandler<HTMLButtonElement> = (specId) => {
+    return () => {
+      dispatch(addPlayerSpec({ playerId: player.id, specId }));
+    };
+  };
+
   return (
-    <details
-      className="collapse-panel"
-      open={isOpen}
-      onToggle={handleDetailsToggle}
-    >
-      <summary className="collapse-header">{player.name}</summary>
+    <details className="collapse-panel" open={isOpen}>
+      <summary className="collapse-header" onClick={handleOnSummaryClick}>
+        {player.name}
+      </summary>
       <div className="collapse-content">
         {player.characterSpecializations.map((spec) => (
           <div className="row mb-10 mt-10" key={spec.id}>
@@ -52,7 +63,11 @@ const CollapsibleCompositionDetails = ({
               </Switch>
             </div>
             <div className="col-auto ml-auto">
-              <Button className="btn-square rounded-circle" type="button">
+              <Button
+                className="btn-square rounded-circle"
+                onClick={handleOnPlusClick(spec.id)}
+                type="button"
+              >
                 <FontAwesomeIcon icon={faPlus} />
               </Button>
             </div>
