@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 
-import CollapsiblePlayerDetails from "./CollapsiblePlayerDetails";
+import CollapsiblePlayerBuilderDetails from "./CollapsiblePlayerBuilderDetails";
 import { AppDispatch, useTypedSelector } from "../../app/store";
 import { useDispatch } from "react-redux";
 import { removePlayerById } from "../roster/rosterSlice";
@@ -20,7 +20,7 @@ const PlayerBuilderRosterList = () => {
   return (
     <div className="collapse-group">
       {orderedRoster.map((player) => (
-        <CollapsiblePlayerDetails
+        <CollapsiblePlayerBuilderDetails
           key={player.id}
           player={player}
           removePlayerById={handleRemovePlayer}

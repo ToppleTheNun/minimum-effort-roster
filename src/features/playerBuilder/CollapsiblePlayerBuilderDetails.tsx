@@ -15,7 +15,7 @@ interface CollapsiblePlayerDetailsProps {
   removePlayerById: (id: string) => void;
 }
 
-const CollapsiblePlayerDetails = ({
+const CollapsiblePlayerBuilderDetails = ({
   player,
   removePlayerById,
 }: CollapsiblePlayerDetailsProps) => {
@@ -64,4 +64,4 @@ const CollapsiblePlayerDetails = ({
   );
 };
 
-export default CollapsiblePlayerDetails;
+export default CollapsiblePlayerBuilderDetails;
