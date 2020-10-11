@@ -24,11 +24,12 @@ const CollapsibleCompositionDetails = ({
 }: CollapsiblePlayerDetailsProps) => {
   const dispatch = useDispatch<AppDispatch>();
   const playerDetails = useTypedSelector(
-    (state) => state.playerBuilder.playerDetails[player.id]
+    (state) => state.composition.playerDetails[player.id]
   );
-  const isOpen = playerDetails?.open ?? true;
+  const isOpen = playerDetails?.open;
 
-  const handleOnSummaryClick = () => {
+  const handleOnSummaryClick: React.MouseEventHandler<HTMLElement> = (e) => {
+    e.preventDefault();
     const actionToDispatch = isOpen ? closePlayerDetails : openPlayerDetails;
     dispatch(actionToDispatch([player.id]));
   };

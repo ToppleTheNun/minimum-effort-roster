@@ -7,7 +7,7 @@ import { AppDispatch, useTypedSelector } from "../../app/store";
 import {
   closePlayerDetails,
   openPlayerDetails,
-} from "../playerBuilder/playerBuilderSlice";
+} from "./compositionSlice";
 import NoRosterAvailable from "./NoRosterAvailable";
 import CompositionSidebar from "./CompositionSidebar";
 

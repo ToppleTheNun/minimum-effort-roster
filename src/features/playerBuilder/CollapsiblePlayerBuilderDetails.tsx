@@ -33,7 +33,8 @@ const CollapsiblePlayerBuilderDetails = ({
     removePlayerById(player.id);
   };
 
-  const handleOnSummaryClick = () => {
+  const handleOnSummaryClick: React.MouseEventHandler<HTMLElement> = (e) => {
+    e.preventDefault();
     const actionToDispatch = isOpen ? closePlayerDetails : openPlayerDetails;
     dispatch(actionToDispatch([player.id]));
   };
