@@ -1,8 +1,8 @@
 import React from "react";
 
 import { CharacterSpecialization } from "../../types/Player";
-import Card from "../halfmoon/Card";
-import Checkbox from "../halfmoon/Checkbox";
+import Card from "../../components/halfmoon/Card";
+import Checkbox from "../../components/halfmoon/Checkbox";
 import { useFormContext } from "react-hook-form";
 
 interface CharacterSpecializationsCardProps {

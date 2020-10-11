@@ -1,5 +1,6 @@
 import { writeFileSync } from "fs";
 import { join } from "path";
+import { format } from "prettier";
 
 import { specializations } from "../src/constants/characterSpecializations";
 
@@ -14,7 +15,8 @@ const specializationPropertyDefinitions = orderedSpecializations.map(
 );
 
 const classesAndSpecsContents = `
-// THIS IS A GENERATED FILE
+// LAST GENERATED AT ${new Date().toISOString().split("T")[0]}
+// GENERATED USING characterSpecializationsFormInputGenerator.ts
 
 export interface CharacterSpecializationFormInput {
 ${specializationPropertyDefinitions.join("\n")}
@@ -28,6 +30,10 @@ const pathToCharacterSpecializationFormInput = join(
   "types",
   "CharacterSpecializationFormInput.ts"
 );
-writeFileSync(pathToCharacterSpecializationFormInput, classesAndSpecsContents, {
-  encoding: "utf-8",
-});
+writeFileSync(
+  pathToCharacterSpecializationFormInput,
+  format(classesAndSpecsContents, { parser: "babel-ts" }),
+  {
+    encoding: "utf-8",
+  }
+);

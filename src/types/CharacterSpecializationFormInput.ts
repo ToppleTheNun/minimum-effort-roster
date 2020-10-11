@@ -1,4 +1,5 @@
-// THIS IS A GENERATED FILE
+// LAST GENERATED AT 2020-10-10
+// GENERATED USING characterSpecializationsFormInputGenerator.ts
 
 export interface CharacterSpecializationFormInput {
   deathKnightBlood: boolean;

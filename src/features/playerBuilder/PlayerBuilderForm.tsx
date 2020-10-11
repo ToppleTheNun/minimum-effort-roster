@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { DevTool } from "@hookform/devtools";
-import { v4 as uuidv4 } from "uuid";
+import { nanoid } from "@reduxjs/toolkit";
 
-import Form from "../halfmoon/Form";
-import FormGroup from "../halfmoon/FormGroup";
-import Input from "../halfmoon/Input";
-import FormRow from "../halfmoon/FormRow";
+import Form from "../../components/halfmoon/Form";
+import FormGroup from "../../components/halfmoon/FormGroup";
+import Input from "../../components/halfmoon/Input";
+import FormRow from "../../components/halfmoon/FormRow";
 import CharacterSpecializationsCard from "./CharacterSpecializationsCard";
 import {
   deathKnightSpecializations,
@@ -24,20 +24,30 @@ import {
   warlockSpecializations,
   warriorSpecializations,
 } from "../../constants/characterSpecializations";
-import Button from "../halfmoon/Button";
-import useRoster from "../../hooks/useRoster";
-import { playerBuilderFormDefaults, playerBuilderFormSchema } from "./schema";
+import Button from "../../components/halfmoon/Button";
+import {
+  playerBuilderFormDefaults,
+  playerBuilderFormSchema,
+} from "./yupSchemas";
 import { CharacterSpecialization, Player } from "../../types/Player";
 import { isDefined } from "../../typeGuards";
 import { CharacterSpecializationFormInput } from "../../types/CharacterSpecializationFormInput";
+import { useDispatch } from "react-redux";
+import { AppDispatch, useTypedSelector } from "../../app/store";
+import { savePlayer } from "../roster/rosterSlice";
+import { specializationsDefaults } from "../../schemas/characterSpecializations";
 
 interface PlayerBuilderFormInput extends CharacterSpecializationFormInput {
   playerName: string;
 }
 
 const PlayerBuilderForm = () => {
-  const { addPlayer } = useRoster();
-  const hookFormMethods = useForm<PlayerBuilderFormInput>({
+  const dispatch = useDispatch<AppDispatch>();
+  const editingPlayer = useTypedSelector(
+    (state) => state.playerBuilder.editingPlayer
+  );
+  const roster = useTypedSelector((state) => state.roster.players);
+  const { reset, ...hookFormMethods } = useForm<PlayerBuilderFormInput>({
     defaultValues: playerBuilderFormDefaults,
     mode: "all",
     resolver: yupResolver(playerBuilderFormSchema),
@@ -51,17 +61,38 @@ const PlayerBuilderForm = () => {
       .filter(isDefined);
 
     const playerToSave: Player = {
-      id: uuidv4(),
+      id: editingPlayer ?? nanoid(),
       name: data.playerName,
       characterSpecializations,
     };
 
-    addPlayer(playerToSave);
-    hookFormMethods.reset();
+    dispatch(savePlayer(playerToSave));
   };
 
+  useEffect(() => {
+    console.log("editingPlayer=", editingPlayer);
+    const editingPlayerById = roster.find((it) => it.id === editingPlayer);
+    if (editingPlayerById) {
+      const specializationsValues = { ...specializationsDefaults };
+      (Object.keys(specializationsValues) as Array<
+        keyof typeof specializationsValues
+      >).forEach((key) => {
+        specializationsValues[key] =
+          editingPlayerById.characterSpecializations.findIndex(
+            (it) => it.variableName === key
+          ) !== -1;
+      });
+      reset({
+        playerName: editingPlayerById.name,
+        ...specializationsValues,
+      });
+    } else {
+      reset(playerBuilderFormDefaults);
+    }
+  }, [editingPlayer, reset, roster]);
+
   return (
-    <FormProvider {...hookFormMethods}>
+    <FormProvider reset={reset} {...hookFormMethods}>
       <Form onSubmit={hookFormMethods.handleSubmit(onSubmit)}>
         <FormGroup>
           <label htmlFor="player-name" className="required">
