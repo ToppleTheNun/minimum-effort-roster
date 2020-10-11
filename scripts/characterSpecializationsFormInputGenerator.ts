@@ -27,7 +27,8 @@ const pathToCharacterSpecializationFormInput = join(
   __dirname,
   "..",
   "src",
-  "types",
+  "features",
+  "playerBuilder",
   "CharacterSpecializationFormInput.ts"
 );
 writeFileSync(

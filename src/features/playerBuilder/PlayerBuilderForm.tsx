@@ -31,7 +31,7 @@ import {
 } from "./yupSchemas";
 import { CharacterSpecialization, Player } from "../../types/Player";
 import { isDefined } from "../../typeGuards";
-import { CharacterSpecializationFormInput } from "../../types/CharacterSpecializationFormInput";
+import { CharacterSpecializationFormInput } from "./CharacterSpecializationFormInput";
 import { useDispatch } from "react-redux";
 import { AppDispatch, useTypedSelector } from "../../app/store";
 import { savePlayer } from "../roster/rosterSlice";
@@ -106,6 +106,9 @@ const PlayerBuilderForm = () => {
             required
             type="text"
           />
+          <div className="form-text">
+            Not character name, but name that the <strong>player</strong> goes by.
+          </div>
         </FormGroup>
         <FormRow>
           <div className="col">

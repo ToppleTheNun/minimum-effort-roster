@@ -1,11 +1,11 @@
 import React, { useMemo } from "react";
 
-import CollapsiblePlayerBuilderDetails from "./CollapsiblePlayerBuilderDetails";
+import CollapsibleCompositionDetails from "./CollapsibleCompositionDetails";
 import { AppDispatch, useTypedSelector } from "../../app/store";
 import { useDispatch } from "react-redux";
 import { removePlayerById } from "../roster/rosterSlice";
 
-const PlayerBuilderRosterList = () => {
+const CompositionRosterList = () => {
   const dispatch = useDispatch<AppDispatch>();
   const roster = useTypedSelector((state) => state.roster.players);
   const orderedRoster = useMemo(
@@ -20,7 +20,7 @@ const PlayerBuilderRosterList = () => {
   return (
     <div className="collapse-group m-5">
       {orderedRoster.map((player) => (
-        <CollapsiblePlayerBuilderDetails
+        <CollapsibleCompositionDetails
           key={player.id}
           player={player}
           removePlayerById={handleRemovePlayer}
@@ -30,4 +30,4 @@ const PlayerBuilderRosterList = () => {
   );
 };
 
-export default PlayerBuilderRosterList;
+export default CompositionRosterList;

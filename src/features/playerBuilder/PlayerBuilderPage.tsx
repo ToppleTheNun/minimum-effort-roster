@@ -47,7 +47,7 @@ const PlayerBuilderPage = () => {
       <div className="row">
         {shouldRenderSidebar && (
           <div className={sidebarClasses}>
-            <Content className="m-0">
+            <Content className="m-5">
               <div
                 className="btn-group w-full"
                 role="group"
