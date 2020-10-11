@@ -6,7 +6,7 @@ const CompositionPage = () => {
   return (
     <Container breakpoint="fluid">
       <Content>
-        This is the future site of the composition page. Check back on me later!
+        This is a home page. Click a link above to go to the feature.
       </Content>
     </Container>
   );
