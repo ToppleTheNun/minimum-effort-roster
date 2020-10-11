@@ -53,7 +53,7 @@ const PlayerBuilderPage = () => {
                 role="group"
                 aria-label="Basic example"
               >
-                <Button color="success" onClick={handleAddNew} type="button">
+                <Button color="primary" onClick={handleAddNew} type="button">
                   Add New
                 </Button>
               </div>

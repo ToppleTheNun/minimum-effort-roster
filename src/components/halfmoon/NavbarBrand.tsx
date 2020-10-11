@@ -6,17 +6,15 @@ export type NavbarBrandProps = {
   className?: string;
 } & React.HTMLAttributes<HTMLAnchorElement>;
 
-const NavbarBrand = ({
-  children,
-  className,
-  ...otherProps
-}: NavbarBrandProps) => {
-  const classes = classNames("navbar-brand", className);
-  return (
-    <a className={classes} {...otherProps}>
-      {children}
-    </a>
-  );
-};
+const NavbarBrand = React.forwardRef<HTMLAnchorElement, NavbarBrandProps>(
+  ({ children, className, ...otherProps }: NavbarBrandProps, forwardedRef) => {
+    const classes = classNames("navbar-brand", className);
+    return (
+      <a className={classes} ref={forwardedRef}>
+        {children}
+      </a>
+    );
+  }
+);
 
 export default NavbarBrand;

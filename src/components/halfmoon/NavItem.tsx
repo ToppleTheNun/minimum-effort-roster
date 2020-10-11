@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 export type NavItemProps = {
   active?: boolean;
@@ -20,9 +21,9 @@ const NavItem = ({
   return (
     <li className={classes} {...otherProps}>
       {href && (
-        <a className="nav-link" href={href}>
+        <Link className="nav-link" to={href}>
           {children}
-        </a>
+        </Link>
       )}
       {!href && <span className="nav-link">{children}</span>}
     </li>

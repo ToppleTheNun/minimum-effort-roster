@@ -70,7 +70,6 @@ const PlayerBuilderForm = () => {
   };
 
   useEffect(() => {
-    console.log("editingPlayer=", editingPlayer);
     const editingPlayerById = roster.find((it) => it.id === editingPlayer);
     if (editingPlayerById) {
       const specializationsValues = { ...specializationsDefaults };
