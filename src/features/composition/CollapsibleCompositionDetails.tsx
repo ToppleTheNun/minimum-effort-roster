@@ -28,17 +28,18 @@ const CollapsibleCompositionDetails = ({
   );
   const isOpen = playerDetails?.open;
 
-  const handleOnSummaryClick: React.MouseEventHandler<HTMLElement> = (e) => {
-    e.preventDefault();
+  const handleDetailsToggle: React.MouseEventHandler<HTMLElement> = () => {
     const actionToDispatch = isOpen ? closePlayerDetails : openPlayerDetails;
     dispatch(actionToDispatch([player.id]));
   };
 
   return (
-    <details className="collapse-panel" open={isOpen}>
-      <summary className="collapse-header" onClick={handleOnSummaryClick}>
-        {player.name}
-      </summary>
+    <details
+      className="collapse-panel"
+      open={isOpen}
+      onToggle={handleDetailsToggle}
+    >
+      <summary className="collapse-header">{player.name}</summary>
       <div className="collapse-content">
         {player.characterSpecializations.map((spec) => (
           <div className="row mb-10 mt-10" key={spec.id}>
