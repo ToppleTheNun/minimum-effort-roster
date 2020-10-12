@@ -1,19 +1,20 @@
 import React from "react";
-
 import Content from "../../components/halfmoon/Content";
-import Button from "../../components/halfmoon/Button";
-import CompositionRosterList from "./CompositionRosterList";
 import ImportExportForm from "../sharing/ImportExportForm";
+import Button from "../../components/halfmoon/Button";
+import PlayerBuilderRosterList from "./PlayerBuilderRosterList";
 
-interface CompositionSidebarProps {
+interface PlayerBuilderSidebarProps {
+  handleAddNew: () => void;
   handleCollapseAll: () => void;
   handleExpandAll: () => void;
 }
 
-const CompositionSidebar = ({
+const PlayerBuilderSidebar = ({
+  handleAddNew,
   handleCollapseAll,
   handleExpandAll,
-}: CompositionSidebarProps) => (
+}: PlayerBuilderSidebarProps) => (
   <div className="col-lg-3">
     <Content className="m-5">
       <ImportExportForm />
@@ -27,9 +28,17 @@ const CompositionSidebar = ({
           Expand All
         </Button>
       </div>
+      <Button
+        className="w-full"
+        color="primary"
+        onClick={handleAddNew}
+        type="button"
+      >
+        Add New
+      </Button>
     </Content>
-    <CompositionRosterList />
+    <PlayerBuilderRosterList />
   </div>
 );
 
-export default CompositionSidebar;
+export default PlayerBuilderSidebar;

@@ -17,7 +17,7 @@ const rosterSlice = createSlice({
   name: "roster",
   initialState,
   reducers: {
-    loadRoster(state, action: PayloadAction<Player[]>) {
+    importRoster(state, action: PayloadAction<Player[]>) {
       state.players = action.payload;
     },
     removePlayerById(state, action: PayloadAction<string>) {
@@ -43,6 +43,10 @@ const rosterSlice = createSlice({
   },
 });
 
-export const { loadRoster, removePlayerById, savePlayer } = rosterSlice.actions;
+export const {
+  importRoster,
+  removePlayerById,
+  savePlayer,
+} = rosterSlice.actions;
 
 export default rosterSlice.reducer;

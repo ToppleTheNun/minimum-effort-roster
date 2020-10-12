@@ -23,7 +23,7 @@ const CollapsiblePlayerBuilderDetails = ({
   const playerDetails = useTypedSelector(
     (state) => state.playerBuilder.playerDetails[player.id]
   );
-  const isOpen = playerDetails?.open ?? true;
+  const isOpen = playerDetails?.open;
 
   const handleEditOnClick = () => {
     dispatch(editPlayer(player.id));

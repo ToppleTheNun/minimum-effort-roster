@@ -2,9 +2,9 @@ import React from "react";
 
 export type WithNavbar = true | "bottom";
 
-export type NavbarContextType = {
+export interface NavbarContextType {
   withNavbar?: WithNavbar;
-};
+}
 
 const NavbarContext = React.createContext<NavbarContextType>({});
 

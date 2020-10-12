@@ -58,6 +58,7 @@ const CollapsibleCompositionDetails = ({
             </div>
             <div className="col-auto ml-auto">
               <Button
+                aria-label="Add"
                 className="btn-square rounded-circle"
                 onClick={handleOnPlusClick(spec.id)}
                 type="button"

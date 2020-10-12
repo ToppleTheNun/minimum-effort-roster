@@ -2,10 +2,10 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface PlayerDetail {
   open?: boolean;
-  specsEnabled?: Record<string, boolean>
+  specsEnabled?: Record<string, boolean>;
 }
 
-interface CharacterSpecInComp {
+export interface CharacterSpecInComp {
   specId: string;
   locked: boolean;
 }
@@ -79,16 +79,23 @@ const compositionSlice = createSlice({
         delete state.composition[action.payload];
       }
     },
+    importComposition(
+      state,
+      action: PayloadAction<Record<string, CharacterSpecInComp>>
+    ) {
+      state.composition = action.payload;
+    },
   },
 });
 
 export const {
   addPlayerSpec,
   closePlayerDetails,
+  importComposition,
   lockPlayerSpec,
   openPlayerDetails,
   removePlayerSpec,
-  unlockPlayerSpec
+  unlockPlayerSpec,
 } = compositionSlice.actions;
 
 export default compositionSlice.reducer;

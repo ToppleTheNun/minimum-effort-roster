@@ -1,8 +1,10 @@
 import React from "react";
 import classNames from "classnames";
 
+export type ButtonColor = "primary" | "secondary" | "success" | "danger";
+
 export type ButtonProps = {
-  color?: "primary" | "secondary" | "success" | "danger";
+  color?: ButtonColor;
   size?: "sm" | "lg";
   block?: boolean;
   disabled?: boolean;
