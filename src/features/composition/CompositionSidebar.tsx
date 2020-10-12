@@ -15,7 +15,6 @@ const CompositionSidebar = ({
 }: CompositionSidebarProps) => (
   <div className="col-lg-3">
     <Content className="m-5">
-      <CompositionForm />
       <div className="btn-group w-full" role="group" aria-label="Basic example">
         <Button onClick={handleCollapseAll} type="button">
           Collapse All

@@ -2,3 +2,7 @@
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
 }
+
+:global(.col-auto).character-spec-div {
+    line-height: 3.2rem;
+}

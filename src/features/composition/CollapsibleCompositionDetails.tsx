@@ -15,6 +15,7 @@ import Button from "../../components/halfmoon/Button";
 import Switch from "../../components/halfmoon/Switch";
 
 import styles from "./CollapsibleCompositionDetails.module.css";
+import Content from "../../components/halfmoon/Content";
 
 interface CollapsiblePlayerDetailsProps {
   player: Player;
@@ -54,13 +55,8 @@ const CollapsibleCompositionDetails = ({
       <div className="collapse-content">
         {player.characterSpecializations.map((spec) => (
           <div className="row mb-10 mt-10" key={spec.id}>
-            <div className="col-auto">
-              <Switch
-                className={cx("character-spec-switch")}
-                id={`${spec.id}-enabled`}
-              >
-                {spec.specName} {spec.className}
-              </Switch>
+            <div className={cx("col-auto", "character-spec-div")}>
+              {spec.specName} {spec.className}
             </div>
             <div className="col-auto ml-auto">
               <Button
