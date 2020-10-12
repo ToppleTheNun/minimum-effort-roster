@@ -78,6 +78,7 @@ const CompositionDisplay = () => {
       <tbody>
         {tanks.map((playerAndSpec) => (
           <CompositionTableRow
+            id={playerAndSpec.id}
             key={playerAndSpec.id}
             name={playerAndSpec.name}
             spec={playerAndSpec.characterSpec}
@@ -85,6 +86,7 @@ const CompositionDisplay = () => {
         ))}
         {healers.map((playerAndSpec) => (
           <CompositionTableRow
+            id={playerAndSpec.id}
             key={playerAndSpec.id}
             name={playerAndSpec.name}
             spec={playerAndSpec.characterSpec}
@@ -92,6 +94,7 @@ const CompositionDisplay = () => {
         ))}
         {dps.map((playerAndSpec) => (
           <CompositionTableRow
+            id={playerAndSpec.id}
             key={playerAndSpec.id}
             name={playerAndSpec.name}
             spec={playerAndSpec.characterSpec}

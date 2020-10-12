@@ -19,6 +19,7 @@ const rosterSlice = createSlice({
   reducers: {
     importRoster(state, action: PayloadAction<Player[]>) {
       state.players = action.payload;
+      writeToLocalStorage("roster", state);
     },
     removePlayerById(state, action: PayloadAction<string>) {
       const index = state.players.findIndex(

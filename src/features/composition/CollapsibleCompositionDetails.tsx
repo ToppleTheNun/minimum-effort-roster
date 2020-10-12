@@ -9,7 +9,7 @@ import { AppDispatch, useTypedSelector } from "../../app/store";
 import {
   closePlayerDetails,
   openPlayerDetails,
-  addPlayerSpec,
+  addPlayerToComposition,
 } from "./compositionSlice";
 import Button from "../../components/halfmoon/Button";
 
@@ -41,7 +41,7 @@ const CollapsibleCompositionDetails = ({
     specId: string
   ) => React.MouseEventHandler<HTMLButtonElement> = (specId) => {
     return () => {
-      dispatch(addPlayerSpec({ playerId: player.id, specId }));
+      dispatch(addPlayerToComposition({ playerId: player.id, specId }));
     };
   };
 

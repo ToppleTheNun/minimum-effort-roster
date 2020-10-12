@@ -59,7 +59,7 @@ const compositionSlice = createSlice({
         state.composition[action.payload] = { ...playerSpec, locked: false };
       }
     },
-    addPlayerSpec(state, action: PayloadAction<AddPlayerSpecPayload>) {
+    addPlayerToComposition(state, action: PayloadAction<AddPlayerSpecPayload>) {
       const playerSpec = state.composition[action.payload.playerId];
       if (playerSpec) {
         state.composition[action.payload.playerId] = {
@@ -73,7 +73,7 @@ const compositionSlice = createSlice({
         };
       }
     },
-    removePlayerSpec(state, action: PayloadAction<string>) {
+    removePlayerFromComposition(state, action: PayloadAction<string>) {
       const playerSpec = state.composition[action.payload];
       if (playerSpec) {
         delete state.composition[action.payload];
@@ -89,12 +89,12 @@ const compositionSlice = createSlice({
 });
 
 export const {
-  addPlayerSpec,
+  addPlayerToComposition,
   closePlayerDetails,
   importComposition,
   lockPlayerSpec,
   openPlayerDetails,
-  removePlayerSpec,
+  removePlayerFromComposition,
   unlockPlayerSpec,
 } = compositionSlice.actions;
 
