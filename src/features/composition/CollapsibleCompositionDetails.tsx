@@ -14,6 +14,8 @@ import {
 import Button from "../../components/halfmoon/Button";
 
 import styles from "./CollapsibleCompositionDetails.module.css";
+import { editPlayer } from "../playerBuilder/playerBuilderSlice";
+import { useHistory } from "react-router";
 
 interface CollapsiblePlayerDetailsProps {
   player: Player;
@@ -26,6 +28,7 @@ const CollapsibleCompositionDetails = ({
   player,
 }: CollapsiblePlayerDetailsProps) => {
   const dispatch = useDispatch<AppDispatch>();
+  const history = useHistory();
   const playerDetails = useTypedSelector(
     (state) => state.composition.playerDetails[player.id]
   );
@@ -35,6 +38,11 @@ const CollapsibleCompositionDetails = ({
     e.preventDefault();
     const actionToDispatch = isOpen ? closePlayerDetails : openPlayerDetails;
     dispatch(actionToDispatch([player.id]));
+  };
+
+  const handleEditOnClick = () => {
+    dispatch(editPlayer(player.id));
+    history.push("/builder");
   };
 
   const handleOnPlusClick: (
@@ -68,6 +76,9 @@ const CollapsibleCompositionDetails = ({
             </div>
           </div>
         ))}
+        <Button onClick={handleEditOnClick} type="button">
+          Edit
+        </Button>
       </div>
     </details>
   );
