@@ -2,7 +2,6 @@ import Content from "../../components/halfmoon/Content";
 import Button from "../../components/halfmoon/Button";
 import CompositionRosterList from "./CompositionRosterList";
 import React from "react";
-import CompositionForm from "./CompositionForm";
 
 interface CompositionSidebarProps {
   handleCollapseAll: () => void;

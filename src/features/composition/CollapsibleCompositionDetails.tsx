@@ -12,10 +12,8 @@ import {
   addPlayerSpec,
 } from "./compositionSlice";
 import Button from "../../components/halfmoon/Button";
-import Switch from "../../components/halfmoon/Switch";
 
 import styles from "./CollapsibleCompositionDetails.module.css";
-import Content from "../../components/halfmoon/Content";
 
 interface CollapsiblePlayerDetailsProps {
   player: Player;
