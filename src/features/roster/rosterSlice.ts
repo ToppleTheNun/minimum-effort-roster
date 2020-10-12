@@ -5,6 +5,11 @@ import {
   writeToLocalStorage,
 } from "../../utils/localStorage";
 
+interface PlayerIdAndSpecId {
+  playerId: string;
+  specId: string;
+}
+
 interface RosterState {
   players: Player[];
 }
@@ -41,12 +46,30 @@ const rosterSlice = createSlice({
       }
       writeToLocalStorage("roster", state);
     },
+    removeSpecFromPlayer(state, action: PayloadAction<PlayerIdAndSpecId>) {
+      const index = state.players.findIndex(
+        (player) => player.id === action.payload.playerId
+      );
+      if (index === -1) {
+        console.log("could not find player by id", action.payload);
+        return;
+      }
+      const player = state.players[index];
+      state.players[index] = {
+        ...player,
+        characterSpecializations: player.characterSpecializations.filter(
+          (it) => it.id !== action.payload.specId
+        ),
+      };
+      writeToLocalStorage("roster", state);
+    },
   },
 });
 
 export const {
   importRoster,
   removePlayerById,
+  removeSpecFromPlayer,
   savePlayer,
 } = rosterSlice.actions;
 
