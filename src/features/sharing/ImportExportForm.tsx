@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { DevTool } from "@hookform/devtools";
@@ -10,7 +10,7 @@ import {
   compositionFormSchema,
 } from "../composition/yupSchemas";
 import InvalidFeedback from "../../components/halfmoon/InvalidFeedback";
-import Button from "../../components/halfmoon/Button";
+import Button, { ButtonColor } from "../../components/halfmoon/Button";
 import FormGroup from "../../components/halfmoon/FormGroup";
 import { AppDispatch, useTypedSelector } from "../../app/store";
 import { fromBase64, toBase64 } from "../../utils/base64";
@@ -22,6 +22,12 @@ import {
 import { Player } from "../../types/Player";
 import { useDispatch } from "react-redux";
 import { importRoster } from "../roster/rosterSlice";
+import ExportToHasteBinButton from "./ExportToHasteBinButton";
+import {
+  getRawTextFromHasteBin,
+  isHasteBinLink,
+  postRawTextToHasteBin,
+} from "../../api/rawHastebinApi";
 
 interface CompositionFormInput {
   code: string;
@@ -44,16 +50,56 @@ const ImportExportForm = () => {
     (state) => state.composition.composition
   );
   const roster = useTypedSelector((state) => state.roster.players);
+  const [importButtonColor, setImportButtonColor] = useState<
+    ButtonColor | undefined
+  >();
+  const [isImporting, setImporting] = useState(false);
 
   const exportCode = hookFormMethods.watch("code");
 
-  const handleImport: SubmitHandler<CompositionFormInput> = (data) => {
-    const importData: ImportData = fromBase64(data.code);
-    if (importData.composition) {
-      dispatch(importComposition(importData.composition));
+  const handleSuccess = () => {
+    setImportButtonColor("success");
+    setTimeout(() => {
+      setImportButtonColor(undefined);
+    }, 1000);
+  };
+
+  const handleFailure = () => {
+    setImportButtonColor("danger");
+    setTimeout(() => {
+      setImportButtonColor(undefined);
+    }, 1000);
+  };
+
+  const handleImport: SubmitHandler<CompositionFormInput> = async (data) => {
+    setImporting(true);
+    setImportButtonColor(undefined);
+    let importCode: string = data.code;
+    if (isHasteBinLink(data.code)) {
+      try {
+        const { data: rawHasteBinContents } = await getRawTextFromHasteBin(
+          data.code
+        );
+        importCode = rawHasteBinContents;
+      } catch (err) {
+        console.log(err);
+      }
     }
-    if (importData.roster) {
-      dispatch(importRoster(importData.roster));
+
+    try {
+      const importData: ImportData = fromBase64(importCode);
+      if (importData.composition) {
+        dispatch(importComposition(importData.composition));
+      }
+      if (importData.roster) {
+        dispatch(importRoster(importData.roster));
+      }
+      setImporting(false);
+      handleSuccess();
+    } catch (err) {
+      console.log(err);
+      setImporting(false);
+      handleFailure();
     }
   };
 
@@ -61,6 +107,13 @@ const ImportExportForm = () => {
     const exportObj = { composition, roster };
     const exportValue = toBase64(exportObj);
     hookFormMethods.setValue("code", exportValue);
+  };
+
+  const handleExportToHasteBin = async () => {
+    const exportObj = { composition, roster };
+    const exportValue = toBase64(exportObj);
+    const { data: rawHasteBinLink } = await postRawTextToHasteBin(exportValue);
+    hookFormMethods.setValue("code", rawHasteBinLink);
   };
 
   return (
@@ -88,12 +141,15 @@ const ImportExportForm = () => {
         </FormGroup>
         <FormGroup className="mb-0">
           <div className="btn-group w-full" role="group">
-            <Button className="w-half" type="submit">
-              Import
+            <Button className="w-half" color={importButtonColor} type="submit">
+              {isImporting ? "Importing..." : "Import"}
             </Button>
             <Button className="w-half" onClick={handleExport} type="button">
               Export
             </Button>
+          </div>
+          <div className="btn-group w-full" role="group">
+            <ExportToHasteBinButton exportToHasteBin={handleExportToHasteBin} />
           </div>
         </FormGroup>
       </Form>
