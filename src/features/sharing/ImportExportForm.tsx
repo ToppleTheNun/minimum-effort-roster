@@ -28,7 +28,6 @@ import {
   isHasteBinLink,
   postRawTextToHasteBin,
 } from "../../api/rawHastebinApi";
-import * as defaultRoster from "../../rosters/roster-oct-13-2020.json";
 import ImportDefaultRosterButton from "./ImportDefaultRosterButton";
 
 interface CompositionFormInput {
