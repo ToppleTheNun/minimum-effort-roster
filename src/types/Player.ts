@@ -9,7 +9,7 @@ export interface CharacterSpecialization {
   className: string;
   id: string;
   specName: string;
-  role: Role;
+  role: string;
   variableName: string;
 }
 

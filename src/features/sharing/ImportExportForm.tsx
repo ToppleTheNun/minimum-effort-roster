@@ -28,6 +28,8 @@ import {
   isHasteBinLink,
   postRawTextToHasteBin,
 } from "../../api/rawHastebinApi";
+import * as defaultRoster from "../../rosters/roster-oct-13-2020.json";
+import ImportDefaultRosterButton from "./ImportDefaultRosterButton";
 
 interface CompositionFormInput {
   code: string;
@@ -71,7 +73,9 @@ const ImportExportForm = () => {
     }, 1000);
   };
 
-  const handleImport: SubmitHandler<CompositionFormInput> = async (data) => {
+  const handleImportFromInput: SubmitHandler<CompositionFormInput> = async (
+    data
+  ) => {
     setImporting(true);
     setImportButtonColor(undefined);
     let importCode: string = data.code;
@@ -118,7 +122,7 @@ const ImportExportForm = () => {
 
   return (
     <FormProvider {...hookFormMethods}>
-      <Form onSubmit={hookFormMethods.handleSubmit(handleImport)}>
+      <Form onSubmit={hookFormMethods.handleSubmit(handleImportFromInput)}>
         <FormGroup>
           <label htmlFor="number-of-tanks">Import Roster and Composition</label>
           {hookFormMethods.errors.code && (
@@ -141,15 +145,29 @@ const ImportExportForm = () => {
         </FormGroup>
         <FormGroup className="mb-0">
           <div className="btn-group w-full" role="group">
-            <Button className="w-half" color={importButtonColor} type="submit">
+            <Button
+              className="w-half"
+              color={importButtonColor}
+              disabled={isImporting}
+              type="submit"
+            >
               {isImporting ? "Importing..." : "Import"}
             </Button>
-            <Button className="w-half" onClick={handleExport} type="button">
+            <Button
+              className="w-half"
+              disabled={isImporting}
+              onClick={handleExport}
+              type="button"
+            >
               Export
             </Button>
           </div>
           <div className="btn-group w-full" role="group">
-            <ExportToHasteBinButton exportToHasteBin={handleExportToHasteBin} />
+            <ImportDefaultRosterButton isImporting={isImporting} />
+            <ExportToHasteBinButton
+              exportToHasteBin={handleExportToHasteBin}
+              isImporting={isImporting}
+            />
           </div>
         </FormGroup>
       </Form>

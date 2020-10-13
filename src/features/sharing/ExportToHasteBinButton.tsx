@@ -3,10 +3,12 @@ import Button, { ButtonColor } from "../../components/halfmoon/Button";
 
 interface ExportToHasteBinButtonProps {
   exportToHasteBin: () => Promise<void>;
+  isImporting: boolean;
 }
 
 const ExportToHasteBinButton = ({
   exportToHasteBin,
+  isImporting
 }: ExportToHasteBinButtonProps) => {
   const [color, setColor] = useState<ButtonColor | undefined>();
   const [isLoading, setLoading] = useState(false);
@@ -40,9 +42,9 @@ const ExportToHasteBinButton = ({
 
   return (
     <Button
-      className="w-full"
+      className="w-half"
       color={color}
-      disabled={isLoading}
+      disabled={isImporting || isLoading}
       onClick={handleExportToHasteBin}
       type="button"
     >

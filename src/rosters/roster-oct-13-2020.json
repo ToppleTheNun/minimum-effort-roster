@@ -1,0 +1,2558 @@
+{
+  "composition": {},
+  "roster": [
+    {
+      "id": "MY25yYNNEK-483g_URjFh",
+      "name": "Amp",
+      "characterSpecializations": [
+        {
+          "className": "Death Knight",
+          "id": "dc9e1796-650c-454d-8200-6c278851d909",
+          "specName": "Blood",
+          "role": "TANK",
+          "variableName": "deathKnightBlood"
+        },
+        {
+          "className": "Death Knight",
+          "id": "21b231ec-f90f-43f0-9f54-867d4b71fffb",
+          "specName": "Frost",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightFrost"
+        },
+        {
+          "className": "Death Knight",
+          "id": "c44b7f01-cf7b-4e24-bf40-52b3ac90491e",
+          "specName": "Unholy",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightUnholy"
+        },
+        {
+          "className": "Monk",
+          "id": "dc681737-76eb-4481-82f8-215176ebc748",
+          "specName": "Brewmaster",
+          "role": "TANK",
+          "variableName": "monkBrewmaster"
+        },
+        {
+          "className": "Monk",
+          "id": "4cf52391-c76c-452f-85c7-28a7b7f51c13",
+          "specName": "Mistweaver",
+          "role": "HEALER",
+          "variableName": "monkMistweaver"
+        },
+        {
+          "className": "Rogue",
+          "id": "c2e35073-6d5b-4f1f-a769-d9b42d6debbc",
+          "specName": "Assassination",
+          "role": "MELEE_DPS",
+          "variableName": "rogueAssassination"
+        },
+        {
+          "className": "Rogue",
+          "id": "364a2442-d306-454a-8cab-64cf1e7f7764",
+          "specName": "Outlaw",
+          "role": "MELEE_DPS",
+          "variableName": "rogueOutlaw"
+        },
+        {
+          "className": "Rogue",
+          "id": "f382f355-83cb-4d7a-b4c2-e4e788291589",
+          "specName": "Subtlety",
+          "role": "MELEE_DPS",
+          "variableName": "rogueSubtlety"
+        },
+        {
+          "className": "Warrior",
+          "id": "f34d137e-4d5d-439a-9216-13182dde58b3",
+          "specName": "Fury",
+          "role": "MELEE_DPS",
+          "variableName": "warriorFury"
+        },
+        {
+          "className": "Warrior",
+          "id": "71d94f5a-fb20-450f-bbf6-63f1bf171c09",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "warriorProtection"
+        }
+      ]
+    },
+    {
+      "id": "7Kn8UJuU1jRdIZ9jzxKDR",
+      "name": "Evade",
+      "characterSpecializations": [
+        {
+          "className": "Death Knight",
+          "id": "21b231ec-f90f-43f0-9f54-867d4b71fffb",
+          "specName": "Frost",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightFrost"
+        },
+        {
+          "className": "Death Knight",
+          "id": "c44b7f01-cf7b-4e24-bf40-52b3ac90491e",
+          "specName": "Unholy",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightUnholy"
+        },
+        {
+          "className": "Demon Hunter",
+          "id": "82eae25f-2441-49c7-9976-c62febbc7fcb",
+          "specName": "Havoc",
+          "role": "MELEE_DPS",
+          "variableName": "demonHunterHavoc"
+        },
+        {
+          "className": "Mage",
+          "id": "acecef98-1acd-4c90-a13a-83f818a84268",
+          "specName": "Arcane",
+          "role": "RANGED_DPS",
+          "variableName": "mageArcane"
+        },
+        {
+          "className": "Mage",
+          "id": "120a44ed-a6f4-4cef-b78d-31b63e27e842",
+          "specName": "Fire",
+          "role": "RANGED_DPS",
+          "variableName": "mageFire"
+        },
+        {
+          "className": "Mage",
+          "id": "57d17876-f46f-40f7-9e44-eb14c3a7f9da",
+          "specName": "Frost",
+          "role": "RANGED_DPS",
+          "variableName": "mageFrost"
+        },
+        {
+          "className": "Monk",
+          "id": "83234607-f4bd-4667-8950-93701ca0174a",
+          "specName": "Windwalker",
+          "role": "MELEE_DPS",
+          "variableName": "monkWindwalker"
+        },
+        {
+          "className": "Priest",
+          "id": "c4c0fcfd-fe4d-4538-871f-3d3f23973284",
+          "specName": "Shadow",
+          "role": "RANGED_DPS",
+          "variableName": "priestShadow"
+        },
+        {
+          "className": "Rogue",
+          "id": "c2e35073-6d5b-4f1f-a769-d9b42d6debbc",
+          "specName": "Assassination",
+          "role": "MELEE_DPS",
+          "variableName": "rogueAssassination"
+        },
+        {
+          "className": "Rogue",
+          "id": "364a2442-d306-454a-8cab-64cf1e7f7764",
+          "specName": "Outlaw",
+          "role": "MELEE_DPS",
+          "variableName": "rogueOutlaw"
+        },
+        {
+          "className": "Rogue",
+          "id": "f382f355-83cb-4d7a-b4c2-e4e788291589",
+          "specName": "Subtlety",
+          "role": "MELEE_DPS",
+          "variableName": "rogueSubtlety"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        }
+      ]
+    },
+    {
+      "id": "FILBhXjc-3VizQlyjj43X",
+      "name": "V",
+      "characterSpecializations": [
+        {
+          "className": "Demon Hunter",
+          "id": "82eae25f-2441-49c7-9976-c62febbc7fcb",
+          "specName": "Havoc",
+          "role": "MELEE_DPS",
+          "variableName": "demonHunterHavoc"
+        },
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Rogue",
+          "id": "c2e35073-6d5b-4f1f-a769-d9b42d6debbc",
+          "specName": "Assassination",
+          "role": "MELEE_DPS",
+          "variableName": "rogueAssassination"
+        },
+        {
+          "className": "Rogue",
+          "id": "364a2442-d306-454a-8cab-64cf1e7f7764",
+          "specName": "Outlaw",
+          "role": "MELEE_DPS",
+          "variableName": "rogueOutlaw"
+        },
+        {
+          "className": "Rogue",
+          "id": "f382f355-83cb-4d7a-b4c2-e4e788291589",
+          "specName": "Subtlety",
+          "role": "MELEE_DPS",
+          "variableName": "rogueSubtlety"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        }
+      ]
+    },
+    {
+      "id": "mj-zkn61DvwMPPvGjKa_i",
+      "name": "Fluffy",
+      "characterSpecializations": [
+        {
+          "className": "Monk",
+          "id": "4cf52391-c76c-452f-85c7-28a7b7f51c13",
+          "specName": "Mistweaver",
+          "role": "HEALER",
+          "variableName": "monkMistweaver"
+        },
+        {
+          "className": "Monk",
+          "id": "83234607-f4bd-4667-8950-93701ca0174a",
+          "specName": "Windwalker",
+          "role": "MELEE_DPS",
+          "variableName": "monkWindwalker"
+        }
+      ]
+    },
+    {
+      "id": "pOyv6D8sRAd_KFFORVDu-",
+      "name": "Isk",
+      "characterSpecializations": [
+        {
+          "className": "Death Knight",
+          "id": "21b231ec-f90f-43f0-9f54-867d4b71fffb",
+          "specName": "Frost",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightFrost"
+        },
+        {
+          "className": "Death Knight",
+          "id": "c44b7f01-cf7b-4e24-bf40-52b3ac90491e",
+          "specName": "Unholy",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightUnholy"
+        },
+        {
+          "className": "Demon Hunter",
+          "id": "82eae25f-2441-49c7-9976-c62febbc7fcb",
+          "specName": "Havoc",
+          "role": "MELEE_DPS",
+          "variableName": "demonHunterHavoc"
+        },
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Druid",
+          "id": "d8253601-3b1a-44bb-ade5-483fa955e7f9",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "druidRestoration"
+        },
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Monk",
+          "id": "4cf52391-c76c-452f-85c7-28a7b7f51c13",
+          "specName": "Mistweaver",
+          "role": "HEALER",
+          "variableName": "monkMistweaver"
+        },
+        {
+          "className": "Monk",
+          "id": "83234607-f4bd-4667-8950-93701ca0174a",
+          "specName": "Windwalker",
+          "role": "MELEE_DPS",
+          "variableName": "monkWindwalker"
+        },
+        {
+          "className": "Paladin",
+          "id": "d811177c-da3e-4a74-9f2a-26eb2ce84cc7",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "paladinHoly"
+        },
+        {
+          "className": "Paladin",
+          "id": "c170dd4d-d1b1-42c7-8172-79b4c8cfeb3a",
+          "specName": "Retribution",
+          "role": "MELEE_DPS",
+          "variableName": "paladinRetribution"
+        },
+        {
+          "className": "Rogue",
+          "id": "c2e35073-6d5b-4f1f-a769-d9b42d6debbc",
+          "specName": "Assassination",
+          "role": "MELEE_DPS",
+          "variableName": "rogueAssassination"
+        },
+        {
+          "className": "Rogue",
+          "id": "364a2442-d306-454a-8cab-64cf1e7f7764",
+          "specName": "Outlaw",
+          "role": "MELEE_DPS",
+          "variableName": "rogueOutlaw"
+        },
+        {
+          "className": "Rogue",
+          "id": "f382f355-83cb-4d7a-b4c2-e4e788291589",
+          "specName": "Subtlety",
+          "role": "MELEE_DPS",
+          "variableName": "rogueSubtlety"
+        },
+        {
+          "className": "Shaman",
+          "id": "e84e5c71-33c0-4e56-8ab6-369ed0fd3ff5",
+          "specName": "Elemental",
+          "role": "RANGED_DPS",
+          "variableName": "shamanElemental"
+        },
+        {
+          "className": "Shaman",
+          "id": "dda041bf-361d-4d52-bcad-d8a79cbe20b7",
+          "specName": "Enhancement",
+          "role": "MELEE_DPS",
+          "variableName": "shamanEnhancement"
+        },
+        {
+          "className": "Shaman",
+          "id": "2d5f83e0-2841-4bd6-b30a-6998f4225e70",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "shamanRestoration"
+        },
+        {
+          "className": "Warrior",
+          "id": "5b1534f2-170f-447b-a954-4a75e9a83c2a",
+          "specName": "Arms",
+          "role": "MELEE_DPS",
+          "variableName": "warriorArms"
+        },
+        {
+          "className": "Warrior",
+          "id": "f34d137e-4d5d-439a-9216-13182dde58b3",
+          "specName": "Fury",
+          "role": "MELEE_DPS",
+          "variableName": "warriorFury"
+        }
+      ]
+    },
+    {
+      "id": "O8bWqi9WVRpTxb0dPc_0y",
+      "name": "Nips",
+      "characterSpecializations": [
+        {
+          "className": "Death Knight",
+          "id": "dc9e1796-650c-454d-8200-6c278851d909",
+          "specName": "Blood",
+          "role": "TANK",
+          "variableName": "deathKnightBlood"
+        },
+        {
+          "className": "Death Knight",
+          "id": "21b231ec-f90f-43f0-9f54-867d4b71fffb",
+          "specName": "Frost",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightFrost"
+        },
+        {
+          "className": "Death Knight",
+          "id": "c44b7f01-cf7b-4e24-bf40-52b3ac90491e",
+          "specName": "Unholy",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightUnholy"
+        },
+        {
+          "className": "Demon Hunter",
+          "id": "82eae25f-2441-49c7-9976-c62febbc7fcb",
+          "specName": "Havoc",
+          "role": "MELEE_DPS",
+          "variableName": "demonHunterHavoc"
+        },
+        {
+          "className": "Demon Hunter",
+          "id": "651dd051-cd94-4ad9-8efd-1811b32756c3",
+          "specName": "Vengeance",
+          "role": "TANK",
+          "variableName": "demonHunterVengeance"
+        },
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Druid",
+          "id": "06df7783-15f2-40e5-ab38-b94b593934ea",
+          "specName": "Guardian",
+          "role": "TANK",
+          "variableName": "druidGuardian"
+        },
+        {
+          "className": "Druid",
+          "id": "d8253601-3b1a-44bb-ade5-483fa955e7f9",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "druidRestoration"
+        },
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Mage",
+          "id": "acecef98-1acd-4c90-a13a-83f818a84268",
+          "specName": "Arcane",
+          "role": "RANGED_DPS",
+          "variableName": "mageArcane"
+        },
+        {
+          "className": "Mage",
+          "id": "120a44ed-a6f4-4cef-b78d-31b63e27e842",
+          "specName": "Fire",
+          "role": "RANGED_DPS",
+          "variableName": "mageFire"
+        },
+        {
+          "className": "Mage",
+          "id": "57d17876-f46f-40f7-9e44-eb14c3a7f9da",
+          "specName": "Frost",
+          "role": "RANGED_DPS",
+          "variableName": "mageFrost"
+        },
+        {
+          "className": "Monk",
+          "id": "dc681737-76eb-4481-82f8-215176ebc748",
+          "specName": "Brewmaster",
+          "role": "TANK",
+          "variableName": "monkBrewmaster"
+        },
+        {
+          "className": "Monk",
+          "id": "4cf52391-c76c-452f-85c7-28a7b7f51c13",
+          "specName": "Mistweaver",
+          "role": "HEALER",
+          "variableName": "monkMistweaver"
+        },
+        {
+          "className": "Monk",
+          "id": "83234607-f4bd-4667-8950-93701ca0174a",
+          "specName": "Windwalker",
+          "role": "MELEE_DPS",
+          "variableName": "monkWindwalker"
+        },
+        {
+          "className": "Paladin",
+          "id": "d811177c-da3e-4a74-9f2a-26eb2ce84cc7",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "paladinHoly"
+        },
+        {
+          "className": "Paladin",
+          "id": "b1aaf8f9-871b-4ed7-b54b-e616ebaa2f94",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "paladinProtection"
+        },
+        {
+          "className": "Paladin",
+          "id": "c170dd4d-d1b1-42c7-8172-79b4c8cfeb3a",
+          "specName": "Retribution",
+          "role": "MELEE_DPS",
+          "variableName": "paladinRetribution"
+        },
+        {
+          "className": "Rogue",
+          "id": "c2e35073-6d5b-4f1f-a769-d9b42d6debbc",
+          "specName": "Assassination",
+          "role": "MELEE_DPS",
+          "variableName": "rogueAssassination"
+        },
+        {
+          "className": "Rogue",
+          "id": "364a2442-d306-454a-8cab-64cf1e7f7764",
+          "specName": "Outlaw",
+          "role": "MELEE_DPS",
+          "variableName": "rogueOutlaw"
+        },
+        {
+          "className": "Rogue",
+          "id": "f382f355-83cb-4d7a-b4c2-e4e788291589",
+          "specName": "Subtlety",
+          "role": "MELEE_DPS",
+          "variableName": "rogueSubtlety"
+        },
+        {
+          "className": "Shaman",
+          "id": "e84e5c71-33c0-4e56-8ab6-369ed0fd3ff5",
+          "specName": "Elemental",
+          "role": "RANGED_DPS",
+          "variableName": "shamanElemental"
+        },
+        {
+          "className": "Shaman",
+          "id": "dda041bf-361d-4d52-bcad-d8a79cbe20b7",
+          "specName": "Enhancement",
+          "role": "MELEE_DPS",
+          "variableName": "shamanEnhancement"
+        },
+        {
+          "className": "Shaman",
+          "id": "2d5f83e0-2841-4bd6-b30a-6998f4225e70",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "shamanRestoration"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        },
+        {
+          "className": "Warrior",
+          "id": "5b1534f2-170f-447b-a954-4a75e9a83c2a",
+          "specName": "Arms",
+          "role": "MELEE_DPS",
+          "variableName": "warriorArms"
+        },
+        {
+          "className": "Warrior",
+          "id": "f34d137e-4d5d-439a-9216-13182dde58b3",
+          "specName": "Fury",
+          "role": "MELEE_DPS",
+          "variableName": "warriorFury"
+        },
+        {
+          "className": "Warrior",
+          "id": "71d94f5a-fb20-450f-bbf6-63f1bf171c09",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "warriorProtection"
+        }
+      ]
+    },
+    {
+      "id": "CQR7M0RiQ8r0a9cixGtsj",
+      "name": "Oxy",
+      "characterSpecializations": [
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Paladin",
+          "id": "b1aaf8f9-871b-4ed7-b54b-e616ebaa2f94",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "paladinProtection"
+        },
+        {
+          "className": "Paladin",
+          "id": "c170dd4d-d1b1-42c7-8172-79b4c8cfeb3a",
+          "specName": "Retribution",
+          "role": "MELEE_DPS",
+          "variableName": "paladinRetribution"
+        }
+      ]
+    },
+    {
+      "id": "rwEOcz1CbKGTyeuv83ryJ",
+      "name": "Mutiny/Promise",
+      "characterSpecializations": [
+        {
+          "className": "Demon Hunter",
+          "id": "82eae25f-2441-49c7-9976-c62febbc7fcb",
+          "specName": "Havoc",
+          "role": "MELEE_DPS",
+          "variableName": "demonHunterHavoc"
+        }
+      ]
+    },
+    {
+      "id": "y1Ckuf6VTvUCqRsNIpTgo",
+      "name": "Deed",
+      "characterSpecializations": [
+        {
+          "className": "Shaman",
+          "id": "e84e5c71-33c0-4e56-8ab6-369ed0fd3ff5",
+          "specName": "Elemental",
+          "role": "RANGED_DPS",
+          "variableName": "shamanElemental"
+        },
+        {
+          "className": "Shaman",
+          "id": "dda041bf-361d-4d52-bcad-d8a79cbe20b7",
+          "specName": "Enhancement",
+          "role": "MELEE_DPS",
+          "variableName": "shamanEnhancement"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        }
+      ]
+    },
+    {
+      "id": "OWrM0Tk-jN2QOAiYI4BlV",
+      "name": "Thak",
+      "characterSpecializations": [
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Druid",
+          "id": "06df7783-15f2-40e5-ab38-b94b593934ea",
+          "specName": "Guardian",
+          "role": "TANK",
+          "variableName": "druidGuardian"
+        },
+        {
+          "className": "Druid",
+          "id": "d8253601-3b1a-44bb-ade5-483fa955e7f9",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "druidRestoration"
+        },
+        {
+          "className": "Priest",
+          "id": "8ab44c67-a12f-4d50-aab1-9ce3b0576905",
+          "specName": "Discipline",
+          "role": "HEALER",
+          "variableName": "priestDiscipline"
+        },
+        {
+          "className": "Priest",
+          "id": "45ba5cf3-78de-4dad-a5a4-f676e45f11d3",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "priestHoly"
+        },
+        {
+          "className": "Priest",
+          "id": "c4c0fcfd-fe4d-4538-871f-3d3f23973284",
+          "specName": "Shadow",
+          "role": "RANGED_DPS",
+          "variableName": "priestShadow"
+        },
+        {
+          "className": "Warrior",
+          "id": "5b1534f2-170f-447b-a954-4a75e9a83c2a",
+          "specName": "Arms",
+          "role": "MELEE_DPS",
+          "variableName": "warriorArms"
+        },
+        {
+          "className": "Warrior",
+          "id": "f34d137e-4d5d-439a-9216-13182dde58b3",
+          "specName": "Fury",
+          "role": "MELEE_DPS",
+          "variableName": "warriorFury"
+        },
+        {
+          "className": "Warrior",
+          "id": "71d94f5a-fb20-450f-bbf6-63f1bf171c09",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "warriorProtection"
+        }
+      ]
+    },
+    {
+      "id": "MOs1mEy53Gn5XJTC-_gch",
+      "name": "Spyder",
+      "characterSpecializations": [
+        {
+          "className": "Demon Hunter",
+          "id": "82eae25f-2441-49c7-9976-c62febbc7fcb",
+          "specName": "Havoc",
+          "role": "MELEE_DPS",
+          "variableName": "demonHunterHavoc"
+        },
+        {
+          "className": "Demon Hunter",
+          "id": "651dd051-cd94-4ad9-8efd-1811b32756c3",
+          "specName": "Vengeance",
+          "role": "TANK",
+          "variableName": "demonHunterVengeance"
+        },
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Druid",
+          "id": "06df7783-15f2-40e5-ab38-b94b593934ea",
+          "specName": "Guardian",
+          "role": "TANK",
+          "variableName": "druidGuardian"
+        },
+        {
+          "className": "Druid",
+          "id": "d8253601-3b1a-44bb-ade5-483fa955e7f9",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "druidRestoration"
+        },
+        {
+          "className": "Mage",
+          "id": "acecef98-1acd-4c90-a13a-83f818a84268",
+          "specName": "Arcane",
+          "role": "RANGED_DPS",
+          "variableName": "mageArcane"
+        },
+        {
+          "className": "Mage",
+          "id": "120a44ed-a6f4-4cef-b78d-31b63e27e842",
+          "specName": "Fire",
+          "role": "RANGED_DPS",
+          "variableName": "mageFire"
+        },
+        {
+          "className": "Mage",
+          "id": "57d17876-f46f-40f7-9e44-eb14c3a7f9da",
+          "specName": "Frost",
+          "role": "RANGED_DPS",
+          "variableName": "mageFrost"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        }
+      ]
+    },
+    {
+      "id": "PdahfDsmoU-pZs7VcPq1l",
+      "name": "Drdavison",
+      "characterSpecializations": [
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Druid",
+          "id": "06df7783-15f2-40e5-ab38-b94b593934ea",
+          "specName": "Guardian",
+          "role": "TANK",
+          "variableName": "druidGuardian"
+        },
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Rogue",
+          "id": "c2e35073-6d5b-4f1f-a769-d9b42d6debbc",
+          "specName": "Assassination",
+          "role": "MELEE_DPS",
+          "variableName": "rogueAssassination"
+        },
+        {
+          "className": "Rogue",
+          "id": "364a2442-d306-454a-8cab-64cf1e7f7764",
+          "specName": "Outlaw",
+          "role": "MELEE_DPS",
+          "variableName": "rogueOutlaw"
+        },
+        {
+          "className": "Rogue",
+          "id": "f382f355-83cb-4d7a-b4c2-e4e788291589",
+          "specName": "Subtlety",
+          "role": "MELEE_DPS",
+          "variableName": "rogueSubtlety"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        }
+      ]
+    },
+    {
+      "id": "Zn4IeWERgh-6KO-O5axfx",
+      "name": "Flute",
+      "characterSpecializations": [
+        {
+          "className": "Mage",
+          "id": "acecef98-1acd-4c90-a13a-83f818a84268",
+          "specName": "Arcane",
+          "role": "RANGED_DPS",
+          "variableName": "mageArcane"
+        },
+        {
+          "className": "Mage",
+          "id": "120a44ed-a6f4-4cef-b78d-31b63e27e842",
+          "specName": "Fire",
+          "role": "RANGED_DPS",
+          "variableName": "mageFire"
+        },
+        {
+          "className": "Mage",
+          "id": "57d17876-f46f-40f7-9e44-eb14c3a7f9da",
+          "specName": "Frost",
+          "role": "RANGED_DPS",
+          "variableName": "mageFrost"
+        },
+        {
+          "className": "Priest",
+          "id": "c4c0fcfd-fe4d-4538-871f-3d3f23973284",
+          "specName": "Shadow",
+          "role": "RANGED_DPS",
+          "variableName": "priestShadow"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        }
+      ]
+    },
+    {
+      "id": "VdvAfU1w3HeKZi2cLWPDN",
+      "name": "Melfrost",
+      "characterSpecializations": [
+        {
+          "className": "Death Knight",
+          "id": "dc9e1796-650c-454d-8200-6c278851d909",
+          "specName": "Blood",
+          "role": "TANK",
+          "variableName": "deathKnightBlood"
+        },
+        {
+          "className": "Death Knight",
+          "id": "21b231ec-f90f-43f0-9f54-867d4b71fffb",
+          "specName": "Frost",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightFrost"
+        },
+        {
+          "className": "Death Knight",
+          "id": "c44b7f01-cf7b-4e24-bf40-52b3ac90491e",
+          "specName": "Unholy",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightUnholy"
+        },
+        {
+          "className": "Demon Hunter",
+          "id": "82eae25f-2441-49c7-9976-c62febbc7fcb",
+          "specName": "Havoc",
+          "role": "MELEE_DPS",
+          "variableName": "demonHunterHavoc"
+        },
+        {
+          "className": "Demon Hunter",
+          "id": "651dd051-cd94-4ad9-8efd-1811b32756c3",
+          "specName": "Vengeance",
+          "role": "TANK",
+          "variableName": "demonHunterVengeance"
+        },
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Druid",
+          "id": "06df7783-15f2-40e5-ab38-b94b593934ea",
+          "specName": "Guardian",
+          "role": "TANK",
+          "variableName": "druidGuardian"
+        },
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Mage",
+          "id": "57d17876-f46f-40f7-9e44-eb14c3a7f9da",
+          "specName": "Frost",
+          "role": "RANGED_DPS",
+          "variableName": "mageFrost"
+        },
+        {
+          "className": "Shaman",
+          "id": "e84e5c71-33c0-4e56-8ab6-369ed0fd3ff5",
+          "specName": "Elemental",
+          "role": "RANGED_DPS",
+          "variableName": "shamanElemental"
+        },
+        {
+          "className": "Shaman",
+          "id": "dda041bf-361d-4d52-bcad-d8a79cbe20b7",
+          "specName": "Enhancement",
+          "role": "MELEE_DPS",
+          "variableName": "shamanEnhancement"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        }
+      ]
+    },
+    {
+      "id": "9UzA1n7X7z9c0yxHPwYnP",
+      "name": "MattBull",
+      "characterSpecializations": [
+        {
+          "className": "Mage",
+          "id": "acecef98-1acd-4c90-a13a-83f818a84268",
+          "specName": "Arcane",
+          "role": "RANGED_DPS",
+          "variableName": "mageArcane"
+        },
+        {
+          "className": "Mage",
+          "id": "120a44ed-a6f4-4cef-b78d-31b63e27e842",
+          "specName": "Fire",
+          "role": "RANGED_DPS",
+          "variableName": "mageFire"
+        },
+        {
+          "className": "Mage",
+          "id": "57d17876-f46f-40f7-9e44-eb14c3a7f9da",
+          "specName": "Frost",
+          "role": "RANGED_DPS",
+          "variableName": "mageFrost"
+        },
+        {
+          "className": "Rogue",
+          "id": "c2e35073-6d5b-4f1f-a769-d9b42d6debbc",
+          "specName": "Assassination",
+          "role": "MELEE_DPS",
+          "variableName": "rogueAssassination"
+        },
+        {
+          "className": "Rogue",
+          "id": "364a2442-d306-454a-8cab-64cf1e7f7764",
+          "specName": "Outlaw",
+          "role": "MELEE_DPS",
+          "variableName": "rogueOutlaw"
+        },
+        {
+          "className": "Rogue",
+          "id": "f382f355-83cb-4d7a-b4c2-e4e788291589",
+          "specName": "Subtlety",
+          "role": "MELEE_DPS",
+          "variableName": "rogueSubtlety"
+        }
+      ]
+    },
+    {
+      "id": "frgn6cxKnowgrpdLX2xiT",
+      "name": "Lyond",
+      "characterSpecializations": [
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Druid",
+          "id": "06df7783-15f2-40e5-ab38-b94b593934ea",
+          "specName": "Guardian",
+          "role": "TANK",
+          "variableName": "druidGuardian"
+        },
+        {
+          "className": "Druid",
+          "id": "d8253601-3b1a-44bb-ade5-483fa955e7f9",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "druidRestoration"
+        },
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Paladin",
+          "id": "d811177c-da3e-4a74-9f2a-26eb2ce84cc7",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "paladinHoly"
+        },
+        {
+          "className": "Paladin",
+          "id": "b1aaf8f9-871b-4ed7-b54b-e616ebaa2f94",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "paladinProtection"
+        },
+        {
+          "className": "Paladin",
+          "id": "c170dd4d-d1b1-42c7-8172-79b4c8cfeb3a",
+          "specName": "Retribution",
+          "role": "MELEE_DPS",
+          "variableName": "paladinRetribution"
+        }
+      ]
+    },
+    {
+      "id": "ITn28mWfW3iQMYwxFM06N",
+      "name": "Joey",
+      "characterSpecializations": [
+        {
+          "className": "Death Knight",
+          "id": "21b231ec-f90f-43f0-9f54-867d4b71fffb",
+          "specName": "Frost",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightFrost"
+        },
+        {
+          "className": "Death Knight",
+          "id": "c44b7f01-cf7b-4e24-bf40-52b3ac90491e",
+          "specName": "Unholy",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightUnholy"
+        },
+        {
+          "className": "Demon Hunter",
+          "id": "82eae25f-2441-49c7-9976-c62febbc7fcb",
+          "specName": "Havoc",
+          "role": "MELEE_DPS",
+          "variableName": "demonHunterHavoc"
+        },
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Druid",
+          "id": "d8253601-3b1a-44bb-ade5-483fa955e7f9",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "druidRestoration"
+        },
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Mage",
+          "id": "acecef98-1acd-4c90-a13a-83f818a84268",
+          "specName": "Arcane",
+          "role": "RANGED_DPS",
+          "variableName": "mageArcane"
+        },
+        {
+          "className": "Mage",
+          "id": "120a44ed-a6f4-4cef-b78d-31b63e27e842",
+          "specName": "Fire",
+          "role": "RANGED_DPS",
+          "variableName": "mageFire"
+        },
+        {
+          "className": "Mage",
+          "id": "57d17876-f46f-40f7-9e44-eb14c3a7f9da",
+          "specName": "Frost",
+          "role": "RANGED_DPS",
+          "variableName": "mageFrost"
+        },
+        {
+          "className": "Monk",
+          "id": "4cf52391-c76c-452f-85c7-28a7b7f51c13",
+          "specName": "Mistweaver",
+          "role": "HEALER",
+          "variableName": "monkMistweaver"
+        },
+        {
+          "className": "Monk",
+          "id": "83234607-f4bd-4667-8950-93701ca0174a",
+          "specName": "Windwalker",
+          "role": "MELEE_DPS",
+          "variableName": "monkWindwalker"
+        },
+        {
+          "className": "Paladin",
+          "id": "d811177c-da3e-4a74-9f2a-26eb2ce84cc7",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "paladinHoly"
+        },
+        {
+          "className": "Paladin",
+          "id": "c170dd4d-d1b1-42c7-8172-79b4c8cfeb3a",
+          "specName": "Retribution",
+          "role": "MELEE_DPS",
+          "variableName": "paladinRetribution"
+        },
+        {
+          "className": "Priest",
+          "id": "8ab44c67-a12f-4d50-aab1-9ce3b0576905",
+          "specName": "Discipline",
+          "role": "HEALER",
+          "variableName": "priestDiscipline"
+        },
+        {
+          "className": "Priest",
+          "id": "45ba5cf3-78de-4dad-a5a4-f676e45f11d3",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "priestHoly"
+        },
+        {
+          "className": "Priest",
+          "id": "c4c0fcfd-fe4d-4538-871f-3d3f23973284",
+          "specName": "Shadow",
+          "role": "RANGED_DPS",
+          "variableName": "priestShadow"
+        },
+        {
+          "className": "Rogue",
+          "id": "c2e35073-6d5b-4f1f-a769-d9b42d6debbc",
+          "specName": "Assassination",
+          "role": "MELEE_DPS",
+          "variableName": "rogueAssassination"
+        },
+        {
+          "className": "Rogue",
+          "id": "364a2442-d306-454a-8cab-64cf1e7f7764",
+          "specName": "Outlaw",
+          "role": "MELEE_DPS",
+          "variableName": "rogueOutlaw"
+        },
+        {
+          "className": "Rogue",
+          "id": "f382f355-83cb-4d7a-b4c2-e4e788291589",
+          "specName": "Subtlety",
+          "role": "MELEE_DPS",
+          "variableName": "rogueSubtlety"
+        },
+        {
+          "className": "Shaman",
+          "id": "e84e5c71-33c0-4e56-8ab6-369ed0fd3ff5",
+          "specName": "Elemental",
+          "role": "RANGED_DPS",
+          "variableName": "shamanElemental"
+        },
+        {
+          "className": "Shaman",
+          "id": "dda041bf-361d-4d52-bcad-d8a79cbe20b7",
+          "specName": "Enhancement",
+          "role": "MELEE_DPS",
+          "variableName": "shamanEnhancement"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        },
+        {
+          "className": "Warrior",
+          "id": "5b1534f2-170f-447b-a954-4a75e9a83c2a",
+          "specName": "Arms",
+          "role": "MELEE_DPS",
+          "variableName": "warriorArms"
+        },
+        {
+          "className": "Warrior",
+          "id": "f34d137e-4d5d-439a-9216-13182dde58b3",
+          "specName": "Fury",
+          "role": "MELEE_DPS",
+          "variableName": "warriorFury"
+        }
+      ]
+    },
+    {
+      "id": "D6_b1JFHYtvrutsLecAsG",
+      "name": "Volraxe",
+      "characterSpecializations": [
+        {
+          "className": "Death Knight",
+          "id": "21b231ec-f90f-43f0-9f54-867d4b71fffb",
+          "specName": "Frost",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightFrost"
+        },
+        {
+          "className": "Death Knight",
+          "id": "c44b7f01-cf7b-4e24-bf40-52b3ac90491e",
+          "specName": "Unholy",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightUnholy"
+        },
+        {
+          "className": "Demon Hunter",
+          "id": "82eae25f-2441-49c7-9976-c62febbc7fcb",
+          "specName": "Havoc",
+          "role": "MELEE_DPS",
+          "variableName": "demonHunterHavoc"
+        },
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        }
+      ]
+    },
+    {
+      "id": "EUeK1y61D_5_cUwz7z0DG",
+      "name": "Meldot",
+      "characterSpecializations": [
+        {
+          "className": "Death Knight",
+          "id": "21b231ec-f90f-43f0-9f54-867d4b71fffb",
+          "specName": "Frost",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightFrost"
+        },
+        {
+          "className": "Death Knight",
+          "id": "c44b7f01-cf7b-4e24-bf40-52b3ac90491e",
+          "specName": "Unholy",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightUnholy"
+        },
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Mage",
+          "id": "acecef98-1acd-4c90-a13a-83f818a84268",
+          "specName": "Arcane",
+          "role": "RANGED_DPS",
+          "variableName": "mageArcane"
+        },
+        {
+          "className": "Mage",
+          "id": "120a44ed-a6f4-4cef-b78d-31b63e27e842",
+          "specName": "Fire",
+          "role": "RANGED_DPS",
+          "variableName": "mageFire"
+        },
+        {
+          "className": "Mage",
+          "id": "57d17876-f46f-40f7-9e44-eb14c3a7f9da",
+          "specName": "Frost",
+          "role": "RANGED_DPS",
+          "variableName": "mageFrost"
+        },
+        {
+          "className": "Monk",
+          "id": "83234607-f4bd-4667-8950-93701ca0174a",
+          "specName": "Windwalker",
+          "role": "MELEE_DPS",
+          "variableName": "monkWindwalker"
+        },
+        {
+          "className": "Paladin",
+          "id": "c170dd4d-d1b1-42c7-8172-79b4c8cfeb3a",
+          "specName": "Retribution",
+          "role": "MELEE_DPS",
+          "variableName": "paladinRetribution"
+        },
+        {
+          "className": "Priest",
+          "id": "c4c0fcfd-fe4d-4538-871f-3d3f23973284",
+          "specName": "Shadow",
+          "role": "RANGED_DPS",
+          "variableName": "priestShadow"
+        },
+        {
+          "className": "Shaman",
+          "id": "e84e5c71-33c0-4e56-8ab6-369ed0fd3ff5",
+          "specName": "Elemental",
+          "role": "RANGED_DPS",
+          "variableName": "shamanElemental"
+        },
+        {
+          "className": "Shaman",
+          "id": "dda041bf-361d-4d52-bcad-d8a79cbe20b7",
+          "specName": "Enhancement",
+          "role": "MELEE_DPS",
+          "variableName": "shamanEnhancement"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        },
+        {
+          "className": "Warrior",
+          "id": "5b1534f2-170f-447b-a954-4a75e9a83c2a",
+          "specName": "Arms",
+          "role": "MELEE_DPS",
+          "variableName": "warriorArms"
+        },
+        {
+          "className": "Warrior",
+          "id": "f34d137e-4d5d-439a-9216-13182dde58b3",
+          "specName": "Fury",
+          "role": "MELEE_DPS",
+          "variableName": "warriorFury"
+        }
+      ]
+    },
+    {
+      "id": "hXZ9y16TWBe09E1yblwtr",
+      "name": "Tuume",
+      "characterSpecializations": [
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Druid",
+          "id": "d8253601-3b1a-44bb-ade5-483fa955e7f9",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "druidRestoration"
+        },
+        {
+          "className": "Shaman",
+          "id": "e84e5c71-33c0-4e56-8ab6-369ed0fd3ff5",
+          "specName": "Elemental",
+          "role": "RANGED_DPS",
+          "variableName": "shamanElemental"
+        },
+        {
+          "className": "Shaman",
+          "id": "dda041bf-361d-4d52-bcad-d8a79cbe20b7",
+          "specName": "Enhancement",
+          "role": "MELEE_DPS",
+          "variableName": "shamanEnhancement"
+        },
+        {
+          "className": "Shaman",
+          "id": "2d5f83e0-2841-4bd6-b30a-6998f4225e70",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "shamanRestoration"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        }
+      ]
+    },
+    {
+      "id": "g0xqRGvwt4xLCMOG6Ehqw",
+      "name": "Kata",
+      "characterSpecializations": [
+        {
+          "className": "Druid",
+          "id": "d8253601-3b1a-44bb-ade5-483fa955e7f9",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "druidRestoration"
+        },
+        {
+          "className": "Shaman",
+          "id": "2d5f83e0-2841-4bd6-b30a-6998f4225e70",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "shamanRestoration"
+        }
+      ]
+    },
+    {
+      "id": "8amx2Cdp-YdwwEEuflAhB",
+      "name": "Shy",
+      "characterSpecializations": [
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Druid",
+          "id": "d8253601-3b1a-44bb-ade5-483fa955e7f9",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "druidRestoration"
+        },
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Mage",
+          "id": "acecef98-1acd-4c90-a13a-83f818a84268",
+          "specName": "Arcane",
+          "role": "RANGED_DPS",
+          "variableName": "mageArcane"
+        },
+        {
+          "className": "Mage",
+          "id": "120a44ed-a6f4-4cef-b78d-31b63e27e842",
+          "specName": "Fire",
+          "role": "RANGED_DPS",
+          "variableName": "mageFire"
+        },
+        {
+          "className": "Mage",
+          "id": "57d17876-f46f-40f7-9e44-eb14c3a7f9da",
+          "specName": "Frost",
+          "role": "RANGED_DPS",
+          "variableName": "mageFrost"
+        },
+        {
+          "className": "Priest",
+          "id": "8ab44c67-a12f-4d50-aab1-9ce3b0576905",
+          "specName": "Discipline",
+          "role": "HEALER",
+          "variableName": "priestDiscipline"
+        },
+        {
+          "className": "Priest",
+          "id": "45ba5cf3-78de-4dad-a5a4-f676e45f11d3",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "priestHoly"
+        },
+        {
+          "className": "Priest",
+          "id": "c4c0fcfd-fe4d-4538-871f-3d3f23973284",
+          "specName": "Shadow",
+          "role": "RANGED_DPS",
+          "variableName": "priestShadow"
+        }
+      ]
+    },
+    {
+      "id": "dpkaHw0d3IZDTs5ORIVSw",
+      "name": "Khascade",
+      "characterSpecializations": [
+        {
+          "className": "Death Knight",
+          "id": "21b231ec-f90f-43f0-9f54-867d4b71fffb",
+          "specName": "Frost",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightFrost"
+        },
+        {
+          "className": "Death Knight",
+          "id": "c44b7f01-cf7b-4e24-bf40-52b3ac90491e",
+          "specName": "Unholy",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightUnholy"
+        },
+        {
+          "className": "Demon Hunter",
+          "id": "82eae25f-2441-49c7-9976-c62febbc7fcb",
+          "specName": "Havoc",
+          "role": "MELEE_DPS",
+          "variableName": "demonHunterHavoc"
+        },
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Druid",
+          "id": "d8253601-3b1a-44bb-ade5-483fa955e7f9",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "druidRestoration"
+        },
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Mage",
+          "id": "acecef98-1acd-4c90-a13a-83f818a84268",
+          "specName": "Arcane",
+          "role": "RANGED_DPS",
+          "variableName": "mageArcane"
+        },
+        {
+          "className": "Mage",
+          "id": "120a44ed-a6f4-4cef-b78d-31b63e27e842",
+          "specName": "Fire",
+          "role": "RANGED_DPS",
+          "variableName": "mageFire"
+        },
+        {
+          "className": "Mage",
+          "id": "57d17876-f46f-40f7-9e44-eb14c3a7f9da",
+          "specName": "Frost",
+          "role": "RANGED_DPS",
+          "variableName": "mageFrost"
+        },
+        {
+          "className": "Monk",
+          "id": "4cf52391-c76c-452f-85c7-28a7b7f51c13",
+          "specName": "Mistweaver",
+          "role": "HEALER",
+          "variableName": "monkMistweaver"
+        },
+        {
+          "className": "Monk",
+          "id": "83234607-f4bd-4667-8950-93701ca0174a",
+          "specName": "Windwalker",
+          "role": "MELEE_DPS",
+          "variableName": "monkWindwalker"
+        },
+        {
+          "className": "Paladin",
+          "id": "d811177c-da3e-4a74-9f2a-26eb2ce84cc7",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "paladinHoly"
+        },
+        {
+          "className": "Paladin",
+          "id": "c170dd4d-d1b1-42c7-8172-79b4c8cfeb3a",
+          "specName": "Retribution",
+          "role": "MELEE_DPS",
+          "variableName": "paladinRetribution"
+        },
+        {
+          "className": "Priest",
+          "id": "8ab44c67-a12f-4d50-aab1-9ce3b0576905",
+          "specName": "Discipline",
+          "role": "HEALER",
+          "variableName": "priestDiscipline"
+        },
+        {
+          "className": "Priest",
+          "id": "45ba5cf3-78de-4dad-a5a4-f676e45f11d3",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "priestHoly"
+        },
+        {
+          "className": "Priest",
+          "id": "c4c0fcfd-fe4d-4538-871f-3d3f23973284",
+          "specName": "Shadow",
+          "role": "RANGED_DPS",
+          "variableName": "priestShadow"
+        },
+        {
+          "className": "Shaman",
+          "id": "e84e5c71-33c0-4e56-8ab6-369ed0fd3ff5",
+          "specName": "Elemental",
+          "role": "RANGED_DPS",
+          "variableName": "shamanElemental"
+        },
+        {
+          "className": "Shaman",
+          "id": "dda041bf-361d-4d52-bcad-d8a79cbe20b7",
+          "specName": "Enhancement",
+          "role": "MELEE_DPS",
+          "variableName": "shamanEnhancement"
+        },
+        {
+          "className": "Shaman",
+          "id": "2d5f83e0-2841-4bd6-b30a-6998f4225e70",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "shamanRestoration"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        },
+        {
+          "className": "Warrior",
+          "id": "5b1534f2-170f-447b-a954-4a75e9a83c2a",
+          "specName": "Arms",
+          "role": "MELEE_DPS",
+          "variableName": "warriorArms"
+        },
+        {
+          "className": "Warrior",
+          "id": "f34d137e-4d5d-439a-9216-13182dde58b3",
+          "specName": "Fury",
+          "role": "MELEE_DPS",
+          "variableName": "warriorFury"
+        }
+      ]
+    },
+    {
+      "id": "no1J9dpMFK1Mupx8v7wUt",
+      "name": "Jake",
+      "characterSpecializations": [
+        {
+          "className": "Monk",
+          "id": "dc681737-76eb-4481-82f8-215176ebc748",
+          "specName": "Brewmaster",
+          "role": "TANK",
+          "variableName": "monkBrewmaster"
+        },
+        {
+          "className": "Monk",
+          "id": "4cf52391-c76c-452f-85c7-28a7b7f51c13",
+          "specName": "Mistweaver",
+          "role": "HEALER",
+          "variableName": "monkMistweaver"
+        },
+        {
+          "className": "Paladin",
+          "id": "d811177c-da3e-4a74-9f2a-26eb2ce84cc7",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "paladinHoly"
+        },
+        {
+          "className": "Paladin",
+          "id": "b1aaf8f9-871b-4ed7-b54b-e616ebaa2f94",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "paladinProtection"
+        },
+        {
+          "className": "Shaman",
+          "id": "2d5f83e0-2841-4bd6-b30a-6998f4225e70",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "shamanRestoration"
+        }
+      ]
+    },
+    {
+      "id": "Y9vwS5bOgLjwk4uQD8Q4N",
+      "name": "Harruu",
+      "characterSpecializations": [
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Paladin",
+          "id": "d811177c-da3e-4a74-9f2a-26eb2ce84cc7",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "paladinHoly"
+        }
+      ]
+    },
+    {
+      "id": "0B1Ne8VEKcuO-Pw0lWsRk",
+      "name": "Slimjim",
+      "characterSpecializations": [
+        {
+          "className": "Paladin",
+          "id": "d811177c-da3e-4a74-9f2a-26eb2ce84cc7",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "paladinHoly"
+        },
+        {
+          "className": "Paladin",
+          "id": "b1aaf8f9-871b-4ed7-b54b-e616ebaa2f94",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "paladinProtection"
+        }
+      ]
+    },
+    {
+      "id": "aCTdOegyXoJAX5QZMXgm2",
+      "name": "Conviction",
+      "characterSpecializations": [
+        {
+          "className": "Priest",
+          "id": "8ab44c67-a12f-4d50-aab1-9ce3b0576905",
+          "specName": "Discipline",
+          "role": "HEALER",
+          "variableName": "priestDiscipline"
+        },
+        {
+          "className": "Priest",
+          "id": "45ba5cf3-78de-4dad-a5a4-f676e45f11d3",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "priestHoly"
+        },
+        {
+          "className": "Priest",
+          "id": "c4c0fcfd-fe4d-4538-871f-3d3f23973284",
+          "specName": "Shadow",
+          "role": "RANGED_DPS",
+          "variableName": "priestShadow"
+        }
+      ]
+    },
+    {
+      "id": "WJmp6flgKPrUB9gy2QmML",
+      "name": "Mike",
+      "characterSpecializations": [
+        {
+          "className": "Death Knight",
+          "id": "dc9e1796-650c-454d-8200-6c278851d909",
+          "specName": "Blood",
+          "role": "TANK",
+          "variableName": "deathKnightBlood"
+        },
+        {
+          "className": "Monk",
+          "id": "dc681737-76eb-4481-82f8-215176ebc748",
+          "specName": "Brewmaster",
+          "role": "TANK",
+          "variableName": "monkBrewmaster"
+        },
+        {
+          "className": "Paladin",
+          "id": "b1aaf8f9-871b-4ed7-b54b-e616ebaa2f94",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "paladinProtection"
+        },
+        {
+          "className": "Warrior",
+          "id": "71d94f5a-fb20-450f-bbf6-63f1bf171c09",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "warriorProtection"
+        }
+      ]
+    },
+    {
+      "id": "5h9HYJQruq-JPXIUeC0F5",
+      "name": "Lonov",
+      "characterSpecializations": [
+        {
+          "className": "Paladin",
+          "id": "d811177c-da3e-4a74-9f2a-26eb2ce84cc7",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "paladinHoly"
+        },
+        {
+          "className": "Paladin",
+          "id": "b1aaf8f9-871b-4ed7-b54b-e616ebaa2f94",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "paladinProtection"
+        }
+      ]
+    },
+    {
+      "id": "bgrLPUU8ycdGgGItKZ17Y",
+      "name": "Carolina",
+      "characterSpecializations": [
+        {
+          "className": "Death Knight",
+          "id": "dc9e1796-650c-454d-8200-6c278851d909",
+          "specName": "Blood",
+          "role": "TANK",
+          "variableName": "deathKnightBlood"
+        },
+        {
+          "className": "Death Knight",
+          "id": "21b231ec-f90f-43f0-9f54-867d4b71fffb",
+          "specName": "Frost",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightFrost"
+        },
+        {
+          "className": "Death Knight",
+          "id": "c44b7f01-cf7b-4e24-bf40-52b3ac90491e",
+          "specName": "Unholy",
+          "role": "MELEE_DPS",
+          "variableName": "deathKnightUnholy"
+        },
+        {
+          "className": "Demon Hunter",
+          "id": "82eae25f-2441-49c7-9976-c62febbc7fcb",
+          "specName": "Havoc",
+          "role": "MELEE_DPS",
+          "variableName": "demonHunterHavoc"
+        },
+        {
+          "className": "Demon Hunter",
+          "id": "651dd051-cd94-4ad9-8efd-1811b32756c3",
+          "specName": "Vengeance",
+          "role": "TANK",
+          "variableName": "demonHunterVengeance"
+        },
+        {
+          "className": "Druid",
+          "id": "3eb17076-7b90-46de-b86b-2a0b9c35c882",
+          "specName": "Balance",
+          "role": "RANGED_DPS",
+          "variableName": "druidBalance"
+        },
+        {
+          "className": "Druid",
+          "id": "24442e24-af02-47ca-ad61-2613b5cc49dc",
+          "specName": "Feral",
+          "role": "MELEE_DPS",
+          "variableName": "druidFeral"
+        },
+        {
+          "className": "Druid",
+          "id": "06df7783-15f2-40e5-ab38-b94b593934ea",
+          "specName": "Guardian",
+          "role": "TANK",
+          "variableName": "druidGuardian"
+        },
+        {
+          "className": "Druid",
+          "id": "d8253601-3b1a-44bb-ade5-483fa955e7f9",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "druidRestoration"
+        },
+        {
+          "className": "Hunter",
+          "id": "4d18d2b3-512a-4ca9-b97f-f9d8e724ae6d",
+          "specName": "Beast Mastery",
+          "role": "RANGED_DPS",
+          "variableName": "hunterBeastMastery"
+        },
+        {
+          "className": "Hunter",
+          "id": "21ac115b-5365-4849-9e72-17d1248638cd",
+          "specName": "Marksmanship",
+          "role": "RANGED_DPS",
+          "variableName": "hunterMarksmanship"
+        },
+        {
+          "className": "Hunter",
+          "id": "b3436423-7262-42e7-9901-b1ade78b6034",
+          "specName": "Survival",
+          "role": "MELEE_DPS",
+          "variableName": "hunterSurvival"
+        },
+        {
+          "className": "Mage",
+          "id": "acecef98-1acd-4c90-a13a-83f818a84268",
+          "specName": "Arcane",
+          "role": "RANGED_DPS",
+          "variableName": "mageArcane"
+        },
+        {
+          "className": "Mage",
+          "id": "120a44ed-a6f4-4cef-b78d-31b63e27e842",
+          "specName": "Fire",
+          "role": "RANGED_DPS",
+          "variableName": "mageFire"
+        },
+        {
+          "className": "Mage",
+          "id": "57d17876-f46f-40f7-9e44-eb14c3a7f9da",
+          "specName": "Frost",
+          "role": "RANGED_DPS",
+          "variableName": "mageFrost"
+        },
+        {
+          "className": "Monk",
+          "id": "dc681737-76eb-4481-82f8-215176ebc748",
+          "specName": "Brewmaster",
+          "role": "TANK",
+          "variableName": "monkBrewmaster"
+        },
+        {
+          "className": "Monk",
+          "id": "4cf52391-c76c-452f-85c7-28a7b7f51c13",
+          "specName": "Mistweaver",
+          "role": "HEALER",
+          "variableName": "monkMistweaver"
+        },
+        {
+          "className": "Monk",
+          "id": "83234607-f4bd-4667-8950-93701ca0174a",
+          "specName": "Windwalker",
+          "role": "MELEE_DPS",
+          "variableName": "monkWindwalker"
+        },
+        {
+          "className": "Paladin",
+          "id": "d811177c-da3e-4a74-9f2a-26eb2ce84cc7",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "paladinHoly"
+        },
+        {
+          "className": "Paladin",
+          "id": "b1aaf8f9-871b-4ed7-b54b-e616ebaa2f94",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "paladinProtection"
+        },
+        {
+          "className": "Paladin",
+          "id": "c170dd4d-d1b1-42c7-8172-79b4c8cfeb3a",
+          "specName": "Retribution",
+          "role": "MELEE_DPS",
+          "variableName": "paladinRetribution"
+        },
+        {
+          "className": "Priest",
+          "id": "8ab44c67-a12f-4d50-aab1-9ce3b0576905",
+          "specName": "Discipline",
+          "role": "HEALER",
+          "variableName": "priestDiscipline"
+        },
+        {
+          "className": "Priest",
+          "id": "45ba5cf3-78de-4dad-a5a4-f676e45f11d3",
+          "specName": "Holy",
+          "role": "HEALER",
+          "variableName": "priestHoly"
+        },
+        {
+          "className": "Priest",
+          "id": "c4c0fcfd-fe4d-4538-871f-3d3f23973284",
+          "specName": "Shadow",
+          "role": "RANGED_DPS",
+          "variableName": "priestShadow"
+        },
+        {
+          "className": "Rogue",
+          "id": "c2e35073-6d5b-4f1f-a769-d9b42d6debbc",
+          "specName": "Assassination",
+          "role": "MELEE_DPS",
+          "variableName": "rogueAssassination"
+        },
+        {
+          "className": "Rogue",
+          "id": "364a2442-d306-454a-8cab-64cf1e7f7764",
+          "specName": "Outlaw",
+          "role": "MELEE_DPS",
+          "variableName": "rogueOutlaw"
+        },
+        {
+          "className": "Rogue",
+          "id": "f382f355-83cb-4d7a-b4c2-e4e788291589",
+          "specName": "Subtlety",
+          "role": "MELEE_DPS",
+          "variableName": "rogueSubtlety"
+        },
+        {
+          "className": "Shaman",
+          "id": "e84e5c71-33c0-4e56-8ab6-369ed0fd3ff5",
+          "specName": "Elemental",
+          "role": "RANGED_DPS",
+          "variableName": "shamanElemental"
+        },
+        {
+          "className": "Shaman",
+          "id": "dda041bf-361d-4d52-bcad-d8a79cbe20b7",
+          "specName": "Enhancement",
+          "role": "MELEE_DPS",
+          "variableName": "shamanEnhancement"
+        },
+        {
+          "className": "Shaman",
+          "id": "2d5f83e0-2841-4bd6-b30a-6998f4225e70",
+          "specName": "Restoration",
+          "role": "HEALER",
+          "variableName": "shamanRestoration"
+        },
+        {
+          "className": "Warlock",
+          "id": "5ed6a7fe-3e04-49cb-9a54-4e67a762f998",
+          "specName": "Affliction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockAffliction"
+        },
+        {
+          "className": "Warlock",
+          "id": "4f9dff20-49e2-4636-9e0a-0bd7c976b6dd",
+          "specName": "Demonology",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDemonology"
+        },
+        {
+          "className": "Warlock",
+          "id": "69146f12-7843-409a-87ec-21bfa4e539d7",
+          "specName": "Destruction",
+          "role": "RANGED_DPS",
+          "variableName": "warlockDestruction"
+        },
+        {
+          "className": "Warrior",
+          "id": "5b1534f2-170f-447b-a954-4a75e9a83c2a",
+          "specName": "Arms",
+          "role": "MELEE_DPS",
+          "variableName": "warriorArms"
+        },
+        {
+          "className": "Warrior",
+          "id": "f34d137e-4d5d-439a-9216-13182dde58b3",
+          "specName": "Fury",
+          "role": "MELEE_DPS",
+          "variableName": "warriorFury"
+        },
+        {
+          "className": "Warrior",
+          "id": "71d94f5a-fb20-450f-bbf6-63f1bf171c09",
+          "specName": "Protection",
+          "role": "TANK",
+          "variableName": "warriorProtection"
+        }
+      ]
+    }
+  ]
+}
