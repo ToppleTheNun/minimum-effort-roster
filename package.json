@@ -76,7 +76,7 @@
     "yup": "^0.29.3"
   },
   "devDependencies": {
-    "@testing-library/dom": "^7.24.5",
+    "@testing-library/dom": "^7.26.0",
     "@types/prettier": "^2.1.2",
     "eslint": "6.8.0",
     "eslint-config-prettier": "^6.12.0",
