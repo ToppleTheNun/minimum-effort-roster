@@ -3,11 +3,10 @@ import NavbarContent from "./halfmoon/NavbarContent";
 import NavbarNav from "./halfmoon/NavbarNav";
 import NavItem from "./halfmoon/NavItem";
 import ToggleDarkModeButton from "./ToggleDarkModeButton";
-import Navbar from "./halfmoon/Navbar";
 import { Link } from "react-router-dom";
 
 const AppNavbar = () => (
-  <Navbar>
+  <nav className="navbar">
     <Link className="navbar-brand" to="/">
       Minimum Effort - Roster
     </Link>
@@ -18,7 +17,7 @@ const AppNavbar = () => (
     <NavbarContent className="ml-auto">
       <ToggleDarkModeButton />
     </NavbarContent>
-  </Navbar>
+  </nav>
 );
 
 export default AppNavbar;
