@@ -13,13 +13,14 @@ import AppNavbar from "../components/AppNavbar";
 import PlayerBuilderPage from "../features/playerBuilder/PlayerBuilderPage";
 import store from "./store";
 import CompositionPage from "../features/composition/CompositionPage";
-import BottomAppNavbar from "../components/BottomAppNavbar";
+import Container from "../components/halfmoon/Container";
+import Content from "../components/halfmoon/Content";
 
 function App() {
   return (
     <Router>
       <Provider store={store}>
-        <PageWrapper className="with-navbar" withNavbar="bottom">
+        <PageWrapper withNavbar>
           <AppNavbar />
           <ContentWrapper>
             <Switch>
@@ -33,8 +34,24 @@ function App() {
                 <Redirect to="/builder" />
               </Route>
             </Switch>
+            <Container
+              breakpoint="fluid"
+              className="bg-very-dark-dm bg-white-lm overflow-auto"
+            >
+              <div className="row row-eq-spacing-lg">
+                <div className="col-lg-3" />
+                <div className="col-lg-3" />
+                <div className="col-lg-3" />
+                <div className="col-lg-3">
+                  <Content className="p-10">
+                    <div className="text-muted">
+                      © Copyright 2020 Richard Harrah
+                    </div>
+                  </Content>
+                </div>
+              </div>
+            </Container>
           </ContentWrapper>
-          <BottomAppNavbar />
         </PageWrapper>
       </Provider>
     </Router>
