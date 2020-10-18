@@ -4,7 +4,9 @@ import Button, {
   ButtonProps,
 } from "../components/halfmoon/Button";
 
-type ButtonWithSuccessProps = { duration?: number } & ButtonProps;
+interface ButtonWithSuccessProps extends ButtonProps {
+  duration?: number;
+}
 
 const ButtonWithSuccess = ({
   color,

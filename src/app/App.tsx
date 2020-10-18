@@ -15,12 +15,14 @@ import store from "./store";
 import CompositionPage from "../features/composition/CompositionPage";
 import Container from "../components/halfmoon/Container";
 import Content from "../components/halfmoon/Content";
+import Joyride from "../components/Joyride";
 
 function App() {
   return (
     <Router>
       <Provider store={store}>
         <PageWrapper withNavbar>
+          <Joyride />
           <AppNavbar />
           <ContentWrapper>
             <Switch>

@@ -121,9 +121,12 @@ const ImportExportForm = () => {
 
   return (
     <FormProvider {...hookFormMethods}>
-      <Form onSubmit={hookFormMethods.handleSubmit(handleImportFromInput)}>
+      <Form
+        id="import-export-form"
+        onSubmit={hookFormMethods.handleSubmit(handleImportFromInput)}
+      >
         <FormGroup>
-          <label htmlFor="number-of-tanks">Import Roster and Composition</label>
+          <label htmlFor="code">Import Roster and Composition</label>
           {hookFormMethods.errors.code && (
             <InvalidFeedback errors={[hookFormMethods.errors.code.message]} />
           )}
@@ -148,6 +151,7 @@ const ImportExportForm = () => {
               className="w-half"
               color={importButtonColor}
               disabled={isImporting}
+              id="import-roster-from-code-button"
               type="submit"
             >
               {isImporting ? "Importing..." : "Import"}
@@ -155,6 +159,7 @@ const ImportExportForm = () => {
             <Button
               className="w-half"
               disabled={isImporting}
+              id="export-current-roster-button"
               onClick={handleExport}
               type="button"
             >

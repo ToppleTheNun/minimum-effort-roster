@@ -11,8 +11,12 @@ const AppNavbar = () => (
       Minimum Effort - Roster
     </Link>
     <NavbarNav>
-      <NavItem href="/builder">Builder</NavItem>
-      <NavItem href="/composition">Composition</NavItem>
+      <NavItem href="/builder" id="navbar-builder-link">
+        Builder
+      </NavItem>
+      <NavItem href="/composition" id="navbar-composition-link">
+        Composition
+      </NavItem>
     </NavbarNav>
     <NavbarContent className="ml-auto">
       <ToggleDarkModeButton />

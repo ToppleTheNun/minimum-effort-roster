@@ -3,15 +3,13 @@ import classNames from "classnames";
 
 export type ButtonColor = "primary" | "secondary" | "success" | "danger";
 
-export type ButtonProps = {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   color?: ButtonColor;
   size?: "sm" | "lg";
   block?: boolean;
-  disabled?: boolean;
   active?: boolean;
-  className?: string;
-  children?: React.ReactNode;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+}
 
 const Button = ({
   color,

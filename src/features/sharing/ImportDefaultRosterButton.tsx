@@ -33,6 +33,7 @@ const ImportDefaultRosterButton = ({
       className="w-half"
       color={color}
       disabled={isImporting || isLoading}
+      id="import-default-roster-button"
       onClick={handleImportDefaultRoster}
       type="button"
     >

@@ -45,6 +45,7 @@ const ExportToHasteBinButton = ({
       className="w-half"
       color={color}
       disabled={isImporting || isLoading}
+      id="export-to-hastebin-button"
       onClick={handleExportToHasteBin}
       type="button"
     >
