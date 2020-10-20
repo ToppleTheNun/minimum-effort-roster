@@ -37,7 +37,7 @@ const ImportDefaultRosterButton = ({
       onClick={handleImportDefaultRoster}
       type="button"
     >
-      {isImporting ? "Importing..." : "Import Default Roster"}
+      {isLoading ? "Importing..." : "Import Default Roster"}
     </Button>
   );
 };

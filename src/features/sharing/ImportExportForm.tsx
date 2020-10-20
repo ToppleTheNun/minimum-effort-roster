@@ -1,62 +1,39 @@
-import React, { useState } from "react";
-import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import { DevTool } from "@hookform/devtools";
+import React, { FormEventHandler, useCallback, useState } from "react";
+import { unwrapResult } from "@reduxjs/toolkit";
 
 import Form from "../../components/halfmoon/Form";
 import Input from "../../components/halfmoon/Input";
-import {
-  compositionFormDefaults,
-  compositionFormSchema,
-} from "../composition/yupSchemas";
-import InvalidFeedback from "../../components/halfmoon/InvalidFeedback";
 import Button, { ButtonColor } from "../../components/halfmoon/Button";
 import FormGroup from "../../components/halfmoon/FormGroup";
 import { AppDispatch, useTypedSelector } from "../../app/store";
 import { fromBase64, toBase64 } from "../../utils/base64";
 import CopyExportButton from "./CopyExportButton";
-import {
-  CharacterSpecInComp,
-  importComposition,
-} from "../composition/compositionSlice";
-import { Player } from "../../types/Player";
+import { importComposition } from "../composition/compositionSlice";
 import { useDispatch } from "react-redux";
 import { importRoster } from "../roster/rosterSlice";
 import ExportToHasteBinButton from "./ExportToHasteBinButton";
-import {
-  getRawTextFromHasteBin,
-  isHasteBinLink,
-  postRawTextToHasteBin,
-} from "../../api/rawHastebinApi";
+import { isHasteBinLink } from "../../api/rawHastebinApi";
 import ImportDefaultRosterButton from "./ImportDefaultRosterButton";
-
-interface CompositionFormInput {
-  code: string;
-}
-
-interface ImportData {
-  composition?: Record<string, CharacterSpecInComp>;
-  roster?: Player[];
-}
+import {
+  getRosterAndCompositionFromHasteBin,
+  postRosterAndCompositionToHasteBin,
+  RosterAndComposition,
+} from "../hasteBin/hasteBinSlice";
+import { setRosterAndCompositionCode } from "./sharingSlice";
 
 const ImportExportForm = () => {
   const dispatch = useDispatch<AppDispatch>();
-  const hookFormMethods = useForm<CompositionFormInput>({
-    criteriaMode: "all",
-    defaultValues: compositionFormDefaults,
-    mode: "all",
-    resolver: yupResolver(compositionFormSchema),
-  });
   const composition = useTypedSelector(
     (state) => state.composition.composition
   );
   const roster = useTypedSelector((state) => state.roster.players);
+  const rosterAndCompositionCode = useTypedSelector(
+    (state) => state.sharing.rosterAndCompositionCode
+  );
   const [importButtonColor, setImportButtonColor] = useState<
     ButtonColor | undefined
   >();
   const [isImporting, setImporting] = useState(false);
-
-  const exportCode = hookFormMethods.watch("code");
 
   const handleSuccess = () => {
     setImportButtonColor("success");
@@ -72,113 +49,140 @@ const ImportExportForm = () => {
     }, 1000);
   };
 
-  const handleImportFromInput: SubmitHandler<CompositionFormInput> = async (
-    data
-  ) => {
-    setImporting(true);
-    setImportButtonColor(undefined);
-    let importCode: string = data.code;
-    if (isHasteBinLink(data.code)) {
+  const handleImportFormBase64 = useCallback(
+    async (code: string) => {
       try {
-        const { data: rawHasteBinContents } = await getRawTextFromHasteBin(
-          data.code
-        );
-        importCode = rawHasteBinContents;
+        const importData: RosterAndComposition = fromBase64(code);
+        if (importData.composition) {
+          dispatch(importComposition(importData.composition));
+        }
+        if (importData.roster) {
+          dispatch(importRoster(importData.roster));
+        }
+        setImporting(false);
+        handleSuccess();
       } catch (err) {
         console.log(err);
+        setImporting(false);
+        handleFailure();
       }
-    }
+    },
+    [dispatch]
+  );
 
-    try {
-      const importData: ImportData = fromBase64(importCode);
-      if (importData.composition) {
-        dispatch(importComposition(importData.composition));
+  const handleImportFormHasteBin = useCallback(
+    async (code: string) => {
+      try {
+        const rosterAndComposition = unwrapResult(
+          await dispatch(getRosterAndCompositionFromHasteBin(code))
+        );
+        if (rosterAndComposition.roster) {
+          dispatch(importRoster(rosterAndComposition.roster));
+        }
+        if (rosterAndComposition.composition) {
+          dispatch(importComposition(rosterAndComposition.composition));
+        }
+        setImporting(false);
+        handleSuccess();
+      } catch (err) {
+        console.log(err);
+        setImporting(false);
+        handleFailure();
       }
-      if (importData.roster) {
-        dispatch(importRoster(importData.roster));
+    },
+    [dispatch]
+  );
+
+  const handleImportFromInput: FormEventHandler<HTMLFormElement> = useCallback(
+    async (event) => {
+      event.preventDefault();
+
+      setImporting(true);
+      setImportButtonColor(undefined);
+
+      if (isHasteBinLink(rosterAndCompositionCode)) {
+        await handleImportFormHasteBin(rosterAndCompositionCode);
+        return;
       }
-      setImporting(false);
-      handleSuccess();
-    } catch (err) {
-      console.log(err);
-      setImporting(false);
-      handleFailure();
-    }
-  };
+
+      await handleImportFormBase64(rosterAndCompositionCode);
+    },
+    [handleImportFormBase64, handleImportFormHasteBin, rosterAndCompositionCode]
+  );
 
   const handleExport = () => {
     const exportObj = { composition, roster };
     const exportValue = toBase64(exportObj);
-    hookFormMethods.setValue("code", exportValue);
+    dispatch(setRosterAndCompositionCode(exportValue));
   };
 
   const handleExportToHasteBin = async () => {
-    const exportObj = { composition, roster };
-    const exportValue = toBase64(exportObj);
-    const { data: rawHasteBinLink } = await postRawTextToHasteBin(exportValue);
-    hookFormMethods.setValue("code", rawHasteBinLink);
+    try {
+      const rawHasteBinLink = unwrapResult(
+        await dispatch(
+          postRosterAndCompositionToHasteBin({ composition, roster })
+        )
+      );
+      dispatch(setRosterAndCompositionCode(rawHasteBinLink));
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
-    <FormProvider {...hookFormMethods}>
-      <Form
-        id="import-export-form"
-        onSubmit={hookFormMethods.handleSubmit(handleImportFromInput)}
-      >
-        <FormGroup>
-          <label htmlFor="code">Import Roster and Composition</label>
-          {hookFormMethods.errors.code && (
-            <InvalidFeedback errors={[hookFormMethods.errors.code.message]} />
+    <Form id="import-export-form" onSubmit={handleImportFromInput}>
+      <FormGroup>
+        <label htmlFor="code">Import Roster and Composition</label>
+        <div className="input-group">
+          <Input
+            id="code"
+            name="code"
+            onChange={(event) => {
+              dispatch(setRosterAndCompositionCode(event.target.value));
+            }}
+            placeholder="Roster and composition code"
+            type="text"
+            value={rosterAndCompositionCode}
+          />
+          {rosterAndCompositionCode && (
+            <CopyExportButton exportCode={rosterAndCompositionCode} />
           )}
-          <div className="input-group">
-            <Input
-              id="code"
-              name="code"
-              placeholder="Roster and composition code"
-              ref={hookFormMethods.register}
-              type="text"
-            />
-            {exportCode && <CopyExportButton exportCode={exportCode} />}
-          </div>
-          <div className="form-text">
-            <strong>Import</strong> a roster and composition that has already
-            been <strong>Export</strong>ed.
-          </div>
-        </FormGroup>
-        <FormGroup className="mb-0">
-          <div className="btn-group w-full" role="group">
-            <Button
-              className="w-half"
-              color={importButtonColor}
-              disabled={isImporting}
-              id="import-roster-from-code-button"
-              type="submit"
-            >
-              {isImporting ? "Importing..." : "Import"}
-            </Button>
-            <Button
-              className="w-half"
-              disabled={isImporting}
-              id="export-current-roster-button"
-              onClick={handleExport}
-              type="button"
-            >
-              Export
-            </Button>
-          </div>
-          <div className="btn-group w-full" role="group">
-            <ImportDefaultRosterButton isImporting={isImporting} />
-            <ExportToHasteBinButton
-              exportToHasteBin={handleExportToHasteBin}
-              isImporting={isImporting}
-            />
-          </div>
-        </FormGroup>
-      </Form>
-      {process.env.NODE_ENV === "development" && (
-        <DevTool control={hookFormMethods.control} />
-      )}
-    </FormProvider>
+        </div>
+        <div className="form-text">
+          <strong>Import</strong> a roster and composition that has already been{" "}
+          <strong>Export</strong>ed.
+        </div>
+      </FormGroup>
+      <FormGroup className="mb-0">
+        <div className="btn-group w-full" role="group">
+          <Button
+            className="w-half"
+            color={importButtonColor}
+            disabled={isImporting}
+            id="import-roster-from-code-button"
+            type="submit"
+          >
+            {isImporting ? "Importing..." : "Import"}
+          </Button>
+          <Button
+            className="w-half"
+            disabled={isImporting}
+            id="export-current-roster-button"
+            onClick={handleExport}
+            type="button"
+          >
+            Export
+          </Button>
+        </div>
+        <div className="btn-group w-full" role="group">
+          <ImportDefaultRosterButton isImporting={isImporting} />
+          <ExportToHasteBinButton
+            exportToHasteBin={handleExportToHasteBin}
+            isImporting={isImporting}
+          />
+        </div>
+      </FormGroup>
+    </Form>
   );
 };
 
