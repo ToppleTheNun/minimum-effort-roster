@@ -4,7 +4,7 @@ import { useTypedSelector } from "../../app/store";
 import { isDefined } from "../../typeGuards";
 import { CharacterSpecialization } from "../../types/Player";
 import { groupBy } from "../../utils/arrays";
-import CompositionTableRow from "./CompositionTableRow";
+import CompositionTable from "./CompositionTable";
 
 interface PlayerAndSpec {
   id: string;
@@ -66,42 +66,14 @@ const CompositionDisplay = () => {
   );
 
   return (
-    <table className="table">
-      <thead>
-        <tr>
-          <th>Role</th>
-          <th>Player Name</th>
-          <th>Specialization</th>
-          <th className="text-right">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        {tanks.map((playerAndSpec) => (
-          <CompositionTableRow
-            id={playerAndSpec.id}
-            key={playerAndSpec.id}
-            name={playerAndSpec.name}
-            spec={playerAndSpec.characterSpec}
-          />
-        ))}
-        {healers.map((playerAndSpec) => (
-          <CompositionTableRow
-            id={playerAndSpec.id}
-            key={playerAndSpec.id}
-            name={playerAndSpec.name}
-            spec={playerAndSpec.characterSpec}
-          />
-        ))}
-        {dps.map((playerAndSpec) => (
-          <CompositionTableRow
-            id={playerAndSpec.id}
-            key={playerAndSpec.id}
-            name={playerAndSpec.name}
-            spec={playerAndSpec.characterSpec}
-          />
-        ))}
-      </tbody>
-    </table>
+    <>
+      <CompositionTable tanks={tanks} healers={healers} dps={dps} />
+      <div className="row row-eq-spacing-lg">
+        <div className="col-lg-4 text-center text-muted">Tanks: {tanks.length}</div>
+        <div className="col-lg-4 text-center text-muted">Healers: {healers.length}</div>
+        <div className="col-lg-4 text-center text-muted">DPS: {dps.length}</div>
+      </div>
+    </>
   );
 };
 
