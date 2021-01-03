@@ -2,11 +2,12 @@ import {
   specializations,
   specializationsDefaults,
 } from "../../schemas/characterSpecializations";
-import { object, string } from "yup";
 
-export const playerBuilderFormSchema = object().shape({
+import * as z from "zod";
+
+export const playerBuilderFormSchema = z.object({
   ...specializations,
-  playerName: string().required(),
+  playerName: z.string(),
 });
 
 export const playerBuilderFormDefaults = {

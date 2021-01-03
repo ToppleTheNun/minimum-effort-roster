@@ -1,4 +1,4 @@
-// LAST GENERATED AT 2020-10-10
+// LAST GENERATED AT 2021-01-03
 // GENERATED USING characterSpecializationsGenerator.ts
 
 import { CharacterSpecialization, Role } from "../types/Player";

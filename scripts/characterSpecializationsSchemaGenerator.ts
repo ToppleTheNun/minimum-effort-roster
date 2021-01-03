@@ -10,7 +10,7 @@ const orderedSpecializations = specializations.sort((a, b) =>
 
 const specializationSchemaConstDefinitions = orderedSpecializations.map(
   (characterSpecialization) => {
-    return `export const ${characterSpecialization.variableName}: BooleanSchema = boolean().required();`;
+    return `export const ${characterSpecialization.variableName} = z.boolean();`;
   }
 );
 
@@ -26,7 +26,7 @@ const classesAndSpecsContents = `
 // LAST GENERATED AT ${new Date().toISOString().split("T")[0]}
 // GENERATED USING characterSpecializationsSchemaGenerator.ts
 
-import { boolean, BooleanSchema } from "yup";
+import * as z from "zod";
 
 ${specializationSchemaConstDefinitions.join("\n")}
 ${allSpecializationsSchemaConstDefinition}

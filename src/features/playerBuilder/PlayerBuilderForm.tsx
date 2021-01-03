@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { DevTool } from "@hookform/devtools";
 import { nanoid } from "@reduxjs/toolkit";
 
@@ -50,7 +50,7 @@ const PlayerBuilderForm = () => {
   const { reset, ...hookFormMethods } = useForm<PlayerBuilderFormInput>({
     defaultValues: playerBuilderFormDefaults,
     mode: "all",
-    resolver: yupResolver(playerBuilderFormSchema),
+    resolver: zodResolver(playerBuilderFormSchema),
   });
   const onSubmit: SubmitHandler<PlayerBuilderFormInput> = (data) => {
     const characterSpecializations: CharacterSpecialization[] = (Object.keys(

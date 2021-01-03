@@ -1,44 +1,44 @@
-// LAST GENERATED AT 2020-10-10
+// LAST GENERATED AT 2021-01-03
 // GENERATED USING characterSpecializationsSchemaGenerator.ts
 
-import { boolean, BooleanSchema } from "yup";
+import * as z from "zod";
 
-export const deathKnightBlood: BooleanSchema = boolean().required();
-export const deathKnightFrost: BooleanSchema = boolean().required();
-export const deathKnightUnholy: BooleanSchema = boolean().required();
-export const demonHunterHavoc: BooleanSchema = boolean().required();
-export const demonHunterVengeance: BooleanSchema = boolean().required();
-export const druidBalance: BooleanSchema = boolean().required();
-export const druidFeral: BooleanSchema = boolean().required();
-export const druidGuardian: BooleanSchema = boolean().required();
-export const druidRestoration: BooleanSchema = boolean().required();
-export const hunterBeastMastery: BooleanSchema = boolean().required();
-export const hunterMarksmanship: BooleanSchema = boolean().required();
-export const hunterSurvival: BooleanSchema = boolean().required();
-export const mageArcane: BooleanSchema = boolean().required();
-export const mageFire: BooleanSchema = boolean().required();
-export const mageFrost: BooleanSchema = boolean().required();
-export const monkBrewmaster: BooleanSchema = boolean().required();
-export const monkMistweaver: BooleanSchema = boolean().required();
-export const monkWindwalker: BooleanSchema = boolean().required();
-export const paladinHoly: BooleanSchema = boolean().required();
-export const paladinProtection: BooleanSchema = boolean().required();
-export const paladinRetribution: BooleanSchema = boolean().required();
-export const priestDiscipline: BooleanSchema = boolean().required();
-export const priestHoly: BooleanSchema = boolean().required();
-export const priestShadow: BooleanSchema = boolean().required();
-export const rogueAssassination: BooleanSchema = boolean().required();
-export const rogueOutlaw: BooleanSchema = boolean().required();
-export const rogueSubtlety: BooleanSchema = boolean().required();
-export const shamanElemental: BooleanSchema = boolean().required();
-export const shamanEnhancement: BooleanSchema = boolean().required();
-export const shamanRestoration: BooleanSchema = boolean().required();
-export const warlockAffliction: BooleanSchema = boolean().required();
-export const warlockDemonology: BooleanSchema = boolean().required();
-export const warlockDestruction: BooleanSchema = boolean().required();
-export const warriorArms: BooleanSchema = boolean().required();
-export const warriorFury: BooleanSchema = boolean().required();
-export const warriorProtection: BooleanSchema = boolean().required();
+export const deathKnightBlood = z.boolean();
+export const deathKnightFrost = z.boolean();
+export const deathKnightUnholy = z.boolean();
+export const demonHunterHavoc = z.boolean();
+export const demonHunterVengeance = z.boolean();
+export const druidBalance = z.boolean();
+export const druidFeral = z.boolean();
+export const druidGuardian = z.boolean();
+export const druidRestoration = z.boolean();
+export const hunterBeastMastery = z.boolean();
+export const hunterMarksmanship = z.boolean();
+export const hunterSurvival = z.boolean();
+export const mageArcane = z.boolean();
+export const mageFire = z.boolean();
+export const mageFrost = z.boolean();
+export const monkBrewmaster = z.boolean();
+export const monkMistweaver = z.boolean();
+export const monkWindwalker = z.boolean();
+export const paladinHoly = z.boolean();
+export const paladinProtection = z.boolean();
+export const paladinRetribution = z.boolean();
+export const priestDiscipline = z.boolean();
+export const priestHoly = z.boolean();
+export const priestShadow = z.boolean();
+export const rogueAssassination = z.boolean();
+export const rogueOutlaw = z.boolean();
+export const rogueSubtlety = z.boolean();
+export const shamanElemental = z.boolean();
+export const shamanEnhancement = z.boolean();
+export const shamanRestoration = z.boolean();
+export const warlockAffliction = z.boolean();
+export const warlockDemonology = z.boolean();
+export const warlockDestruction = z.boolean();
+export const warriorArms = z.boolean();
+export const warriorFury = z.boolean();
+export const warriorProtection = z.boolean();
 export const specializations = {
   deathKnightBlood,
   deathKnightFrost,
